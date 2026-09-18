@@ -1,0 +1,48 @@
+name: mace_energy_model
+seed: 42
+device: cpu        
+
+train_file: data/train.xyz
+valid_file: data/valid.xyz
+test_file: data/test.xyz
+energy_key: energy
+forces_key: forces
+# E0s: average -> референсные атомные энергии подбираются линейной регрессией
+# по датасету (изолированных атомов у нас нет, это стандартный вариант для такого случая)
+E0s: average
+
+model: MACE
+num_channels: 64     
+max_L: 1               
+r_max: 5.0               
+num_radial_basis: 8
+num_cutoff_basis: 5
+num_interactions: 2       
+correlation: 3             # порядок ACE-контракции внутри слоя (стандартное значение MACE)
+MLP_irreps: "16x0e"
+gate: silu
+
+loss: weighted            # энергия + силы
+energy_weight: 1.0
+forces_weight: 10.0        # forces помогают обучить более гладкую PES даже если нужна только energy
+                            # если силы не важны совсем, поставьте forces_weight: 0
+batch_size: 48
+valid_batch_size: 32
+max_num_epochs: 30
+lr: 0.01
+weight_decay: 5e-7
+ema: True
+ema_decay: 0.99
+amsgrad: True
+scheduler: ReduceLROnPlateau
+patience: 20
+
+swa: False             # Stochastic Weight Averaging на последних эпохах — стабилизирует энергию
+start_swa: 150
+swa_forces_weight: 100
+swa_energy_weight: 1000
+
+model_dir: models
+log_dir: logs
+checkpoints_dir: checkpoints
+results_dir: results
