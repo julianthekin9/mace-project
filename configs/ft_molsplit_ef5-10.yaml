@@ -1,0 +1,41 @@
+# From scratch on MACE-OMOL-0, molecule-level split (mace-orca-split).
+# ft_molsplit_ef5-10 / ef1-100 differ only in E:F weights; ef5-10 = weights of fine-tune 1 (baseline).
+# Keys = mace_run_train 0.3.16 flags; CLI overrides YAML (Colab: docs/COLAB.md).
+# Keep this file ASCII: configargparse reads it in the locale encoding (cp1251 on Windows).
+name: ft_molsplit_ef5-10
+seed: 42
+device: cuda
+work_dir: runs/ft_molsplit_ef5-10
+
+foundation_model: models/foundation-omol.model
+multiheads_finetuning: False
+model: MACE
+
+train_file: data/train.xyz
+valid_file: data/valid.xyz
+test_file: data/test.xyz
+
+energy_key: REF_energy
+forces_key: REF_forces
+total_charge_key: charge
+total_spin_key: multiplicity
+compute_stress: False
+
+E0s: estimated
+loss: weighted
+energy_weight: 5.0
+forces_weight: 10.0
+
+default_dtype: float64
+batch_size: 8
+valid_batch_size: 8
+max_num_epochs: 60
+lr: 0.0001
+weight_decay: 0.0
+amsgrad: True
+clip_grad: 1.0
+ema: True
+ema_decay: 0.999
+scheduler: ReduceLROnPlateau
+scheduler_patience: 5
+patience: 10

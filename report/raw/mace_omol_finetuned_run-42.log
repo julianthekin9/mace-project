@@ -1,0 +1,852 @@
+2026-09-28 16:46:11.794 INFO: ===========VERIFYING SETTINGS===========
+2026-09-28 16:46:11.795 INFO: Stage Two is activated as start_stage_two was defined
+2026-09-28 16:46:11.796 INFO: MACE version: 0.3.16
+2026-09-28 16:46:11.964 INFO: CUDA version: 12.8, CUDA device: 0
+2026-09-28 16:46:24.344 INFO: Using foundation model foundation-omol.model as initial checkpoint.
+2026-09-28 16:46:24.346 INFO: ===========LOADING INPUT DATA===========
+2026-09-28 16:46:24.346 INFO: Using heads: ['Default']
+2026-09-28 16:46:24.346 INFO: Using the key specifications to parse data:
+2026-09-28 16:46:24.346 INFO: Default: KeySpecification(info_keys={'energy': 'REF_energy', 'stress': 'REF_stress', 'virials': 'REF_virials', 'dipole': 'dipole', 'head': 'head', 'elec_temp': 'elec_temp', 'total_charge': 'charge', 'polarizability': 'polarizability', 'total_spin': 'multiplicity'}, arrays_keys={'forces': 'REF_forces', 'charges': 'REF_charges'})
+2026-09-28 16:46:24.347 INFO: =============    Processing head Default     ===========
+2026-09-28 16:46:30.892 INFO: Training set 1/1 [energy: 8184, stress: 0, virials: 0, dipole components: 0, head: 8184, elec_temp: 0, total_charge: 8184, polarizability: 0, total_spin: 8184, forces: 8184, charges: 0]
+2026-09-28 16:46:30.937 INFO: Total Training set [energy: 8184, stress: 0, virials: 0, dipole components: 0, head: 8184, elec_temp: 0, total_charge: 8184, polarizability: 0, total_spin: 8184, forces: 8184, charges: 0]
+2026-09-28 16:46:33.651 INFO: Validation set 1/1 [energy: 1023, stress: 0, virials: 0, dipole components: 0, head: 1023, elec_temp: 0, total_charge: 1023, polarizability: 0, total_spin: 1023, forces: 1023, charges: 0]
+2026-09-28 16:46:33.657 INFO: Total Validation set [energy: 1023, stress: 0, virials: 0, dipole components: 0, head: 1023, elec_temp: 0, total_charge: 1023, polarizability: 0, total_spin: 1023, forces: 1023, charges: 0]
+2026-09-28 16:46:35.980 INFO: Test set 1/1 [energy: 1023, stress: 0, virials: 0, dipole components: 0, head: 1023, elec_temp: 0, total_charge: 1023, polarizability: 0, total_spin: 1023, forces: 1023, charges: 0]
+2026-09-28 16:46:35.986 INFO: Total Test set [energy: 1023, stress: 0, virials: 0, dipole components: 0, head: 1023, elec_temp: 0, total_charge: 1023, polarizability: 0, total_spin: 1023, forces: 1023, charges: 0]
+2026-09-28 16:46:35.986 INFO: Total number of configurations: train=8184, valid=1023, tests=[Default_Default: 1023],
+2026-09-28 16:46:36.037 INFO: Atomic Numbers used: [np.int64(1), np.int64(5), np.int64(6), np.int64(7), np.int64(8), np.int64(9), np.int64(15), np.int64(16), np.int64(17), np.int64(24), np.int64(25), np.int64(26), np.int64(27), np.int64(28), np.int64(29), np.int64(30), np.int64(33), np.int64(35), np.int64(53)]
+2026-09-28 16:46:36.038 INFO: Estimating E0s from foundation model predictions on training data
+2026-09-28 16:46:36.052 INFO: Estimating E0s using foundation model on 8184 configurations with 19 elements
+2026-09-28 16:52:29.484 INFO: ===========VERIFYING SETTINGS===========
+2026-09-28 16:52:29.485 INFO: Stage Two is activated as start_stage_two was defined
+2026-09-28 16:52:29.485 INFO: MACE version: 0.3.16
+2026-09-28 16:52:29.626 INFO: CUDA version: 12.8, CUDA device: 0
+2026-09-28 16:52:30.802 INFO: Using foundation model foundation-omol.model as initial checkpoint.
+2026-09-28 16:52:30.804 INFO: ===========LOADING INPUT DATA===========
+2026-09-28 16:52:30.804 INFO: Using heads: ['Default']
+2026-09-28 16:52:30.804 INFO: Using the key specifications to parse data:
+2026-09-28 16:52:30.805 INFO: Default: KeySpecification(info_keys={'energy': 'REF_energy', 'stress': 'REF_stress', 'virials': 'REF_virials', 'dipole': 'dipole', 'head': 'head', 'elec_temp': 'elec_temp', 'total_charge': 'charge', 'polarizability': 'polarizability', 'total_spin': 'multiplicity'}, arrays_keys={'forces': 'REF_forces', 'charges': 'REF_charges'})
+2026-09-28 16:52:30.805 INFO: =============    Processing head Default     ===========
+2026-09-28 16:52:33.779 INFO: Training set 1/1 [energy: 8184, stress: 0, virials: 0, dipole components: 0, head: 8184, elec_temp: 0, total_charge: 8184, polarizability: 0, total_spin: 8184, forces: 8184, charges: 0]
+2026-09-28 16:52:33.821 INFO: Total Training set [energy: 8184, stress: 0, virials: 0, dipole components: 0, head: 8184, elec_temp: 0, total_charge: 8184, polarizability: 0, total_spin: 8184, forces: 8184, charges: 0]
+2026-09-28 16:52:34.211 INFO: Validation set 1/1 [energy: 1023, stress: 0, virials: 0, dipole components: 0, head: 1023, elec_temp: 0, total_charge: 1023, polarizability: 0, total_spin: 1023, forces: 1023, charges: 0]
+2026-09-28 16:52:34.217 INFO: Total Validation set [energy: 1023, stress: 0, virials: 0, dipole components: 0, head: 1023, elec_temp: 0, total_charge: 1023, polarizability: 0, total_spin: 1023, forces: 1023, charges: 0]
+2026-09-28 16:52:34.604 INFO: Test set 1/1 [energy: 1023, stress: 0, virials: 0, dipole components: 0, head: 1023, elec_temp: 0, total_charge: 1023, polarizability: 0, total_spin: 1023, forces: 1023, charges: 0]
+2026-09-28 16:52:34.610 INFO: Total Test set [energy: 1023, stress: 0, virials: 0, dipole components: 0, head: 1023, elec_temp: 0, total_charge: 1023, polarizability: 0, total_spin: 1023, forces: 1023, charges: 0]
+2026-09-28 16:52:34.610 INFO: Total number of configurations: train=8184, valid=1023, tests=[Default_Default: 1023],
+2026-09-28 16:52:34.661 INFO: Atomic Numbers used: [np.int64(1), np.int64(5), np.int64(6), np.int64(7), np.int64(8), np.int64(9), np.int64(15), np.int64(16), np.int64(17), np.int64(24), np.int64(25), np.int64(26), np.int64(27), np.int64(28), np.int64(29), np.int64(30), np.int64(33), np.int64(35), np.int64(53)]
+2026-09-28 16:52:34.661 INFO: Estimating E0s from foundation model predictions on training data
+2026-09-28 16:52:34.666 INFO: Estimating E0s using foundation model on 8184 configurations with 19 elements
+2026-09-28 17:01:19.728 INFO: ================================================================================
+2026-09-28 17:01:19.729 INFO: E0 ESTIMATION FROM FOUNDATION MODEL
+2026-09-28 17:01:19.729 INFO: ================================================================================
+2026-09-28 17:01:19.729 INFO: Rank of system: 19/19
+2026-09-28 17:01:19.730 INFO: Residuals: [2130641.18895093]
+2026-09-28 17:01:19.730 INFO: Element 1: foundation E0 = -15.990004 eV, correction = -0.317832 eV, new E0 = -16.307836 eV
+2026-09-28 17:01:19.730 INFO: Element 5: foundation E0 = -678.593445 eV, correction = -8.627960 eV, new E0 = -687.221405 eV
+2026-09-28 17:01:19.731 INFO: Element 6: foundation E0 = -1037.167847 eV, correction = -0.505571 eV, new E0 = -1037.673418 eV
+2026-09-28 17:01:19.731 INFO: Element 7: foundation E0 = -1490.378174 eV, correction = 0.654061 eV, new E0 = -1489.724113 eV
+2026-09-28 17:01:19.731 INFO: Element 8: foundation E0 = -2047.592529 eV, correction = -0.817404 eV, new E0 = -2048.409933 eV
+2026-09-28 17:01:19.731 INFO: Element 9: foundation E0 = -2717.376465 eV, correction = 0.287315 eV, new E0 = -2717.089150 eV
+2026-09-28 17:01:19.731 INFO: Element 15: foundation E0 = -9290.515625 eV, correction = 3.094824 eV, new E0 = -9287.420801 eV
+2026-09-28 17:01:19.732 INFO: Element 16: foundation E0 = -10835.086914 eV, correction = -0.112848 eV, new E0 = -10835.199762 eV
+2026-09-28 17:01:19.732 INFO: Element 17: foundation E0 = -12522.258789 eV, correction = 0.152854 eV, new E0 = -12522.105935 eV
+2026-09-28 17:01:19.732 INFO: Element 24: foundation E0 = -28417.921875 eV, correction = 16.946472 eV, new E0 = -28400.975403 eV
+2026-09-28 17:01:19.732 INFO: Element 25: foundation E0 = -31315.437500 eV, correction = 16.953931 eV, new E0 = -31298.483569 eV
+2026-09-28 17:01:19.732 INFO: Element 26: foundation E0 = -34382.968750 eV, correction = 24.581153 eV, new E0 = -34358.387597 eV
+2026-09-28 17:01:19.733 INFO: Element 27: foundation E0 = -37622.691406 eV, correction = 22.410770 eV, new E0 = -37600.280636 eV
+2026-09-28 17:01:19.733 INFO: Element 28: foundation E0 = -41039.656250 eV, correction = 22.612290 eV, new E0 = -41017.043960 eV
+2026-09-28 17:01:19.733 INFO: Element 29: foundation E0 = -44635.363281 eV, correction = 26.618272 eV, new E0 = -44608.745009 eV
+2026-09-28 17:01:19.733 INFO: Element 30: foundation E0 = -48416.160156 eV, correction = 31.714779 eV, new E0 = -48384.445377 eV
+2026-09-28 17:01:19.733 INFO: Element 33: foundation E0 = -60840.089844 eV, correction = -6.347853 eV, new E0 = -60846.437697 eV
+2026-09-28 17:01:19.734 INFO: Element 35: foundation E0 = -70042.242188 eV, correction = -4.066928 eV, new E0 = -70046.309115 eV
+2026-09-28 17:01:19.734 INFO: Element 53: foundation E0 = -8099.596191 eV, correction = -0.283562 eV, new E0 = -8099.879753 eV
+2026-09-28 17:01:19.734 INFO: ================================================================================
+2026-09-28 17:01:19.735 INFO: FIT STATISTICS
+2026-09-28 17:01:19.735 INFO: ================================================================================
+2026-09-28 17:01:19.735 INFO: RMSE before E0 correction: 21.291453 eV
+2026-09-28 17:01:19.735 INFO: RMSE after E0 correction:  16.135126 eV
+2026-09-28 17:01:19.735 INFO: MAE before E0 correction:  11.967938 eV
+2026-09-28 17:01:19.735 INFO: MAE after E0 correction:   10.853965 eV
+2026-09-28 17:01:19.736 INFO: ================================================================================
+2026-09-28 17:01:19.736 INFO: Atomic Energies used (z: eV) for head Default: {1: -16.30783597597825, 5: -687.2214048368646, 6: -1037.6734178036152, 7: -1489.7241132976612, 8: -2048.4099331903367, 9: -2717.0891500300186, 15: -9287.420801015864, 16: -10835.199761586953, 17: -12522.105934582647, 24: -28400.97540254872, 25: -31298.48356856115, 26: -34358.38759735746, 27: -37600.28063605125, 28: -41017.04396011429, 29: -44608.745009046484, 30: -48384.44537726321, 33: -60846.43769680956, 35: -70046.30911513398, 53: -8099.8797534959995}
+2026-09-28 17:01:19.737 INFO: Processing datasets for head 'Default'
+2026-09-28 17:01:29.533 INFO: Combining 1 list datasets for head 'Default'
+2026-09-28 17:01:30.747 INFO: Combining 1 list datasets for head 'Default_valid'
+2026-09-28 17:01:30.747 INFO: Combined validation datasets for Default
+2026-09-28 17:01:30.748 INFO: Head 'Default' training dataset size: 8184
+2026-09-28 17:01:30.748 INFO: Computing average number of neighbors
+2026-09-28 17:01:33.309 INFO: Average number of neighbors: 24.947329446165025
+2026-09-28 17:01:33.309 INFO: During training the following quantities will be reported: energy, forces
+2026-09-28 17:01:33.310 INFO: ===========MODEL DETAILS===========
+2026-09-28 17:01:35.694 INFO: Loading FOUNDATION model
+2026-09-28 17:01:35.695 INFO: Using filtered elements: [np.int64(1), np.int64(5), np.int64(6), np.int64(7), np.int64(8), np.int64(9), np.int64(15), np.int64(16), np.int64(17), np.int64(24), np.int64(25), np.int64(26), np.int64(27), np.int64(28), np.int64(29), np.int64(30), np.int64(33), np.int64(35), np.int64(53)]
+2026-09-28 17:01:35.695 INFO: Model configuration extracted from foundation model
+2026-09-28 17:01:35.695 INFO: Using weighted loss function for fine-tuning
+2026-09-28 17:01:35.696 INFO: Message passing with hidden irreps 1024x0e+1024x1o+1024x2e)
+2026-09-28 17:01:35.696 INFO: 3 layers, each with correlation order: 2 (body order: 3) and spherical harmonics up to: l=3
+2026-09-28 17:01:35.696 INFO: Radial cutoff: 6.0 A (total receptive field for each atom: 18.0 A)
+2026-09-28 17:01:35.696 INFO: Distance transform for radial basis functions: None
+2026-09-28 17:01:39.522 INFO: ===========OPTIMIZER INFORMATION===========
+2026-09-28 17:01:39.523 INFO: Using ADAM as parameter optimizer
+2026-09-28 17:01:39.523 INFO: Batch size: 32
+2026-09-28 17:01:39.523 INFO: Using Exponential Moving Average with decay: 0.999
+2026-09-28 17:01:39.524 INFO: Number of gradient updates: 25575
+2026-09-28 17:01:39.524 INFO: Learning rate: 0.0001, weight decay: 0.0
+2026-09-28 17:01:39.524 INFO: WeightedEnergyForcesLoss(energy_weight=5.000, forces_weight=10.000)
+2026-09-28 17:01:39.525 INFO: === Layer's learning rates ===
+2026-09-28 17:01:39.526 INFO: Param group 0: lr = 0.0001
+2026-09-28 17:01:39.527 INFO: Param group 1: lr = 0.0001
+2026-09-28 17:01:39.527 INFO: Param group 2: lr = 0.0001
+2026-09-28 17:01:39.527 INFO: Param group 3: lr = 0.0001
+2026-09-28 17:01:39.527 INFO: Param group 4: lr = 0.0001
+2026-09-28 17:01:39.527 INFO: Param group 5: lr = 0.0001
+2026-09-28 17:01:39.528 INFO: Param group 6: lr = 0.0001
+2026-09-28 17:01:39.528 INFO: Stage Two (after 90 epochs) with loss function: WeightedEnergyForcesLoss(energy_weight=5.000, forces_weight=10.000), with energy weight : 5.0, forces weight : 10.0 and learning rate : 1e-05
+2026-09-28 17:01:40.125 INFO: Using gradient clipping with tolerance=1.000
+2026-09-28 17:01:40.125 INFO: 
+2026-09-28 17:01:40.125 INFO: ===========TRAINING===========
+2026-09-28 17:01:40.125 INFO: Started training, reporting errors on validation set
+2026-09-28 17:01:40.126 INFO: Loss metrics on validation set
+2026-09-28 17:06:16.026 INFO: ===========VERIFYING SETTINGS===========
+2026-09-28 17:06:17.220 INFO: Stage Two is activated as start_stage_two was defined
+2026-09-28 17:06:17.221 INFO: MACE version: 0.3.16
+2026-09-28 17:09:25.601 INFO: ===========VERIFYING SETTINGS===========
+2026-09-28 17:09:26.213 INFO: Stage Two is activated as start_stage_two was defined
+2026-09-28 17:09:26.214 INFO: MACE version: 0.3.16
+2026-09-28 17:09:26.398 INFO: CUDA version: 12.8, CUDA device: 0
+2026-09-28 17:09:41.011 INFO: Using foundation model foundation-omol.model as initial checkpoint.
+2026-09-28 17:09:41.016 INFO: ===========LOADING INPUT DATA===========
+2026-09-28 17:09:41.016 INFO: Using heads: ['Default']
+2026-09-28 17:09:41.017 INFO: Using the key specifications to parse data:
+2026-09-28 17:09:41.017 INFO: Default: KeySpecification(info_keys={'energy': 'REF_energy', 'stress': 'REF_stress', 'virials': 'REF_virials', 'dipole': 'dipole', 'head': 'head', 'elec_temp': 'elec_temp', 'total_charge': 'charge', 'polarizability': 'polarizability', 'total_spin': 'multiplicity'}, arrays_keys={'forces': 'REF_forces', 'charges': 'REF_charges'})
+2026-09-28 17:09:41.017 INFO: =============    Processing head Default     ===========
+2026-09-28 17:09:45.690 INFO: Training set 1/1 [energy: 8184, stress: 0, virials: 0, dipole components: 0, head: 8184, elec_temp: 0, total_charge: 8184, polarizability: 0, total_spin: 8184, forces: 8184, charges: 0]
+2026-09-28 17:09:45.734 INFO: Total Training set [energy: 8184, stress: 0, virials: 0, dipole components: 0, head: 8184, elec_temp: 0, total_charge: 8184, polarizability: 0, total_spin: 8184, forces: 8184, charges: 0]
+2026-09-28 17:09:47.169 INFO: Validation set 1/1 [energy: 1023, stress: 0, virials: 0, dipole components: 0, head: 1023, elec_temp: 0, total_charge: 1023, polarizability: 0, total_spin: 1023, forces: 1023, charges: 0]
+2026-09-28 17:09:47.175 INFO: Total Validation set [energy: 1023, stress: 0, virials: 0, dipole components: 0, head: 1023, elec_temp: 0, total_charge: 1023, polarizability: 0, total_spin: 1023, forces: 1023, charges: 0]
+2026-09-28 17:09:48.560 INFO: Test set 1/1 [energy: 1023, stress: 0, virials: 0, dipole components: 0, head: 1023, elec_temp: 0, total_charge: 1023, polarizability: 0, total_spin: 1023, forces: 1023, charges: 0]
+2026-09-28 17:09:48.566 INFO: Total Test set [energy: 1023, stress: 0, virials: 0, dipole components: 0, head: 1023, elec_temp: 0, total_charge: 1023, polarizability: 0, total_spin: 1023, forces: 1023, charges: 0]
+2026-09-28 17:09:48.566 INFO: Total number of configurations: train=8184, valid=1023, tests=[Default_Default: 1023],
+2026-09-28 17:09:48.618 INFO: Atomic Numbers used: [np.int64(1), np.int64(5), np.int64(6), np.int64(7), np.int64(8), np.int64(9), np.int64(15), np.int64(16), np.int64(17), np.int64(24), np.int64(25), np.int64(26), np.int64(27), np.int64(28), np.int64(29), np.int64(30), np.int64(33), np.int64(35), np.int64(53)]
+2026-09-28 17:09:48.619 INFO: Estimating E0s from foundation model predictions on training data
+2026-09-28 17:09:48.636 INFO: Estimating E0s using foundation model on 8184 configurations with 19 elements
+2026-09-28 17:14:01.697 INFO: ================================================================================
+2026-09-28 17:14:01.698 INFO: E0 ESTIMATION FROM FOUNDATION MODEL
+2026-09-28 17:14:01.698 INFO: ================================================================================
+2026-09-28 17:14:01.698 INFO: Rank of system: 19/19
+2026-09-28 17:14:01.699 INFO: Residuals: [2130641.18895094]
+2026-09-28 17:14:01.699 INFO: Element 1: foundation E0 = -15.990004 eV, correction = -0.317832 eV, new E0 = -16.307836 eV
+2026-09-28 17:14:01.699 INFO: Element 5: foundation E0 = -678.593445 eV, correction = -8.627960 eV, new E0 = -687.221405 eV
+2026-09-28 17:14:01.699 INFO: Element 6: foundation E0 = -1037.167847 eV, correction = -0.505571 eV, new E0 = -1037.673418 eV
+2026-09-28 17:14:01.700 INFO: Element 7: foundation E0 = -1490.378174 eV, correction = 0.654061 eV, new E0 = -1489.724113 eV
+2026-09-28 17:14:01.700 INFO: Element 8: foundation E0 = -2047.592529 eV, correction = -0.817404 eV, new E0 = -2048.409933 eV
+2026-09-28 17:14:01.700 INFO: Element 9: foundation E0 = -2717.376465 eV, correction = 0.287315 eV, new E0 = -2717.089150 eV
+2026-09-28 17:14:01.700 INFO: Element 15: foundation E0 = -9290.515625 eV, correction = 3.094824 eV, new E0 = -9287.420801 eV
+2026-09-28 17:14:01.700 INFO: Element 16: foundation E0 = -10835.086914 eV, correction = -0.112848 eV, new E0 = -10835.199762 eV
+2026-09-28 17:14:01.700 INFO: Element 17: foundation E0 = -12522.258789 eV, correction = 0.152854 eV, new E0 = -12522.105935 eV
+2026-09-28 17:14:01.701 INFO: Element 24: foundation E0 = -28417.921875 eV, correction = 16.946472 eV, new E0 = -28400.975403 eV
+2026-09-28 17:14:01.701 INFO: Element 25: foundation E0 = -31315.437500 eV, correction = 16.953931 eV, new E0 = -31298.483569 eV
+2026-09-28 17:14:01.701 INFO: Element 26: foundation E0 = -34382.968750 eV, correction = 24.581153 eV, new E0 = -34358.387597 eV
+2026-09-28 17:14:01.701 INFO: Element 27: foundation E0 = -37622.691406 eV, correction = 22.410770 eV, new E0 = -37600.280636 eV
+2026-09-28 17:14:01.701 INFO: Element 28: foundation E0 = -41039.656250 eV, correction = 22.612290 eV, new E0 = -41017.043960 eV
+2026-09-28 17:14:01.702 INFO: Element 29: foundation E0 = -44635.363281 eV, correction = 26.618272 eV, new E0 = -44608.745009 eV
+2026-09-28 17:14:01.702 INFO: Element 30: foundation E0 = -48416.160156 eV, correction = 31.714779 eV, new E0 = -48384.445377 eV
+2026-09-28 17:14:01.702 INFO: Element 33: foundation E0 = -60840.089844 eV, correction = -6.347853 eV, new E0 = -60846.437697 eV
+2026-09-28 17:14:01.702 INFO: Element 35: foundation E0 = -70042.242188 eV, correction = -4.066928 eV, new E0 = -70046.309115 eV
+2026-09-28 17:14:01.702 INFO: Element 53: foundation E0 = -8099.596191 eV, correction = -0.283562 eV, new E0 = -8099.879753 eV
+2026-09-28 17:14:01.703 INFO: ================================================================================
+2026-09-28 17:14:01.703 INFO: FIT STATISTICS
+2026-09-28 17:14:01.703 INFO: ================================================================================
+2026-09-28 17:14:01.703 INFO: RMSE before E0 correction: 21.291453 eV
+2026-09-28 17:14:01.704 INFO: RMSE after E0 correction:  16.135126 eV
+2026-09-28 17:14:01.704 INFO: MAE before E0 correction:  11.967938 eV
+2026-09-28 17:14:01.704 INFO: MAE after E0 correction:   10.853965 eV
+2026-09-28 17:14:01.704 INFO: ================================================================================
+2026-09-28 17:14:01.705 INFO: Atomic Energies used (z: eV) for head Default: {1: -16.30783597597825, 5: -687.2214048368646, 6: -1037.6734178036152, 7: -1489.7241132976612, 8: -2048.4099331903367, 9: -2717.0891500300186, 15: -9287.420801015864, 16: -10835.199761586953, 17: -12522.105934582647, 24: -28400.97540254872, 25: -31298.48356856115, 26: -34358.38759735746, 27: -37600.28063605125, 28: -41017.04396011429, 29: -44608.745009046484, 30: -48384.44537726321, 33: -60846.43769680956, 35: -70046.30911513398, 53: -8099.8797534959995}
+2026-09-28 17:14:01.705 INFO: Processing datasets for head 'Default'
+2026-09-28 17:14:11.292 INFO: Combining 1 list datasets for head 'Default'
+2026-09-28 17:14:12.483 INFO: Combining 1 list datasets for head 'Default_valid'
+2026-09-28 17:14:12.483 INFO: Combined validation datasets for Default
+2026-09-28 17:14:12.483 INFO: Head 'Default' training dataset size: 8184
+2026-09-28 17:14:12.484 INFO: Computing average number of neighbors
+2026-09-28 17:14:15.063 INFO: Average number of neighbors: 24.947329446165025
+2026-09-28 17:14:15.063 INFO: During training the following quantities will be reported: energy, forces
+2026-09-28 17:14:15.064 INFO: ===========MODEL DETAILS===========
+2026-09-28 17:14:17.468 INFO: Loading FOUNDATION model
+2026-09-28 17:14:17.469 INFO: Using filtered elements: [np.int64(1), np.int64(5), np.int64(6), np.int64(7), np.int64(8), np.int64(9), np.int64(15), np.int64(16), np.int64(17), np.int64(24), np.int64(25), np.int64(26), np.int64(27), np.int64(28), np.int64(29), np.int64(30), np.int64(33), np.int64(35), np.int64(53)]
+2026-09-28 17:14:17.469 INFO: Model configuration extracted from foundation model
+2026-09-28 17:14:17.470 INFO: Using weighted loss function for fine-tuning
+2026-09-28 17:14:17.470 INFO: Message passing with hidden irreps 1024x0e+1024x1o+1024x2e)
+2026-09-28 17:14:17.470 INFO: 3 layers, each with correlation order: 2 (body order: 3) and spherical harmonics up to: l=3
+2026-09-28 17:14:17.470 INFO: Radial cutoff: 6.0 A (total receptive field for each atom: 18.0 A)
+2026-09-28 17:14:17.470 INFO: Distance transform for radial basis functions: None
+2026-09-28 17:14:21.292 INFO: ===========OPTIMIZER INFORMATION===========
+2026-09-28 17:14:21.292 INFO: Using ADAM as parameter optimizer
+2026-09-28 17:14:21.293 INFO: Batch size: 32
+2026-09-28 17:14:21.293 INFO: Using Exponential Moving Average with decay: 0.999
+2026-09-28 17:14:21.294 INFO: Number of gradient updates: 25575
+2026-09-28 17:14:21.294 INFO: Learning rate: 0.0001, weight decay: 0.0
+2026-09-28 17:14:21.294 INFO: WeightedEnergyForcesLoss(energy_weight=5.000, forces_weight=10.000)
+2026-09-28 17:14:21.296 INFO: === Layer's learning rates ===
+2026-09-28 17:14:21.297 INFO: Param group 0: lr = 0.0001
+2026-09-28 17:14:21.297 INFO: Param group 1: lr = 0.0001
+2026-09-28 17:14:21.298 INFO: Param group 2: lr = 0.0001
+2026-09-28 17:14:21.298 INFO: Param group 3: lr = 0.0001
+2026-09-28 17:14:21.298 INFO: Param group 4: lr = 0.0001
+2026-09-28 17:14:21.299 INFO: Param group 5: lr = 0.0001
+2026-09-28 17:14:21.299 INFO: Param group 6: lr = 0.0001
+2026-09-28 17:14:21.299 INFO: Stage Two (after 90 epochs) with loss function: WeightedEnergyForcesLoss(energy_weight=5.000, forces_weight=10.000), with energy weight : 5.0, forces weight : 10.0 and learning rate : 1e-05
+2026-09-28 17:14:21.548 INFO: Using gradient clipping with tolerance=1.000
+2026-09-28 17:14:21.548 INFO: 
+2026-09-28 17:14:21.549 INFO: ===========TRAINING===========
+2026-09-28 17:14:21.549 INFO: Started training, reporting errors on validation set
+2026-09-28 17:14:21.549 INFO: Loss metrics on validation set
+2026-09-28 17:14:41.460 INFO: Initial: head: Default, loss=0.25480894, RMSE_E_per_atom=  880.31 meV, RMSE_F=  597.80 meV / A
+2026-09-28 17:20:35.743 INFO: ===========VERIFYING SETTINGS===========
+2026-09-28 17:20:35.744 INFO: Stage Two is activated as start_stage_two was defined
+2026-09-28 17:20:35.745 INFO: MACE version: 0.3.16
+2026-09-28 17:20:35.910 INFO: CUDA version: 12.8, CUDA device: 0
+2026-09-28 17:20:37.208 INFO: Using foundation model foundation-omol.model as initial checkpoint.
+2026-09-28 17:20:37.209 INFO: ===========LOADING INPUT DATA===========
+2026-09-28 17:20:37.210 INFO: Using heads: ['Default']
+2026-09-28 17:20:37.210 INFO: Using the key specifications to parse data:
+2026-09-28 17:20:37.210 INFO: Default: KeySpecification(info_keys={'energy': 'REF_energy', 'stress': 'REF_stress', 'virials': 'REF_virials', 'dipole': 'dipole', 'head': 'head', 'elec_temp': 'elec_temp', 'total_charge': 'charge', 'polarizability': 'polarizability', 'total_spin': 'multiplicity'}, arrays_keys={'forces': 'REF_forces', 'charges': 'REF_charges'})
+2026-09-28 17:20:37.210 INFO: =============    Processing head Default     ===========
+2026-09-28 17:20:40.184 INFO: Training set 1/1 [energy: 8184, stress: 0, virials: 0, dipole components: 0, head: 8184, elec_temp: 0, total_charge: 8184, polarizability: 0, total_spin: 8184, forces: 8184, charges: 0]
+2026-09-28 17:20:40.227 INFO: Total Training set [energy: 8184, stress: 0, virials: 0, dipole components: 0, head: 8184, elec_temp: 0, total_charge: 8184, polarizability: 0, total_spin: 8184, forces: 8184, charges: 0]
+2026-09-28 17:20:40.615 INFO: Validation set 1/1 [energy: 1023, stress: 0, virials: 0, dipole components: 0, head: 1023, elec_temp: 0, total_charge: 1023, polarizability: 0, total_spin: 1023, forces: 1023, charges: 0]
+2026-09-28 17:20:40.621 INFO: Total Validation set [energy: 1023, stress: 0, virials: 0, dipole components: 0, head: 1023, elec_temp: 0, total_charge: 1023, polarizability: 0, total_spin: 1023, forces: 1023, charges: 0]
+2026-09-28 17:20:41.005 INFO: Test set 1/1 [energy: 1023, stress: 0, virials: 0, dipole components: 0, head: 1023, elec_temp: 0, total_charge: 1023, polarizability: 0, total_spin: 1023, forces: 1023, charges: 0]
+2026-09-28 17:20:41.011 INFO: Total Test set [energy: 1023, stress: 0, virials: 0, dipole components: 0, head: 1023, elec_temp: 0, total_charge: 1023, polarizability: 0, total_spin: 1023, forces: 1023, charges: 0]
+2026-09-28 17:20:41.011 INFO: Total number of configurations: train=8184, valid=1023, tests=[Default_Default: 1023],
+2026-09-28 17:20:41.063 INFO: Atomic Numbers used: [np.int64(1), np.int64(5), np.int64(6), np.int64(7), np.int64(8), np.int64(9), np.int64(15), np.int64(16), np.int64(17), np.int64(24), np.int64(25), np.int64(26), np.int64(27), np.int64(28), np.int64(29), np.int64(30), np.int64(33), np.int64(35), np.int64(53)]
+2026-09-28 17:20:41.064 INFO: Estimating E0s from foundation model predictions on training data
+2026-09-28 17:20:41.069 INFO: Estimating E0s using foundation model on 8184 configurations with 19 elements
+2026-09-28 17:22:56.077 INFO: ===========VERIFYING SETTINGS===========
+2026-09-28 17:22:56.079 INFO: Stage Two is activated as start_stage_two was defined
+2026-09-28 17:22:56.079 INFO: MACE version: 0.3.16
+2026-09-28 17:22:56.235 INFO: CUDA version: 12.8, CUDA device: 0
+2026-09-28 17:22:57.492 INFO: Using foundation model foundation-omol.model as initial checkpoint.
+2026-09-28 17:22:57.493 INFO: ===========LOADING INPUT DATA===========
+2026-09-28 17:22:57.493 INFO: Using heads: ['Default']
+2026-09-28 17:22:57.494 INFO: Using the key specifications to parse data:
+2026-09-28 17:22:57.494 INFO: Default: KeySpecification(info_keys={'energy': 'REF_energy', 'stress': 'REF_stress', 'virials': 'REF_virials', 'dipole': 'dipole', 'head': 'head', 'elec_temp': 'elec_temp', 'total_charge': 'charge', 'polarizability': 'polarizability', 'total_spin': 'multiplicity'}, arrays_keys={'forces': 'REF_forces', 'charges': 'REF_charges'})
+2026-09-28 17:22:57.494 INFO: =============    Processing head Default     ===========
+2026-09-28 17:23:00.477 INFO: Training set 1/1 [energy: 8184, stress: 0, virials: 0, dipole components: 0, head: 8184, elec_temp: 0, total_charge: 8184, polarizability: 0, total_spin: 8184, forces: 8184, charges: 0]
+2026-09-28 17:23:00.520 INFO: Total Training set [energy: 8184, stress: 0, virials: 0, dipole components: 0, head: 8184, elec_temp: 0, total_charge: 8184, polarizability: 0, total_spin: 8184, forces: 8184, charges: 0]
+2026-09-28 17:23:00.911 INFO: Validation set 1/1 [energy: 1023, stress: 0, virials: 0, dipole components: 0, head: 1023, elec_temp: 0, total_charge: 1023, polarizability: 0, total_spin: 1023, forces: 1023, charges: 0]
+2026-09-28 17:23:00.917 INFO: Total Validation set [energy: 1023, stress: 0, virials: 0, dipole components: 0, head: 1023, elec_temp: 0, total_charge: 1023, polarizability: 0, total_spin: 1023, forces: 1023, charges: 0]
+2026-09-28 17:23:01.304 INFO: Test set 1/1 [energy: 1023, stress: 0, virials: 0, dipole components: 0, head: 1023, elec_temp: 0, total_charge: 1023, polarizability: 0, total_spin: 1023, forces: 1023, charges: 0]
+2026-09-28 17:23:01.310 INFO: Total Test set [energy: 1023, stress: 0, virials: 0, dipole components: 0, head: 1023, elec_temp: 0, total_charge: 1023, polarizability: 0, total_spin: 1023, forces: 1023, charges: 0]
+2026-09-28 17:23:01.310 INFO: Total number of configurations: train=8184, valid=1023, tests=[Default_Default: 1023],
+2026-09-28 17:23:01.362 INFO: Atomic Numbers used: [np.int64(1), np.int64(5), np.int64(6), np.int64(7), np.int64(8), np.int64(9), np.int64(15), np.int64(16), np.int64(17), np.int64(24), np.int64(25), np.int64(26), np.int64(27), np.int64(28), np.int64(29), np.int64(30), np.int64(33), np.int64(35), np.int64(53)]
+2026-09-28 17:23:01.363 INFO: Estimating E0s from foundation model predictions on training data
+2026-09-28 17:23:01.368 INFO: Estimating E0s using foundation model on 8184 configurations with 19 elements
+2026-09-28 17:27:18.358 INFO: ================================================================================
+2026-09-28 17:27:18.359 INFO: E0 ESTIMATION FROM FOUNDATION MODEL
+2026-09-28 17:27:18.359 INFO: ================================================================================
+2026-09-28 17:27:18.359 INFO: Rank of system: 19/19
+2026-09-28 17:27:18.360 INFO: Residuals: [2130641.18895093]
+2026-09-28 17:27:18.360 INFO: Element 1: foundation E0 = -15.990004 eV, correction = -0.317832 eV, new E0 = -16.307836 eV
+2026-09-28 17:27:18.360 INFO: Element 5: foundation E0 = -678.593445 eV, correction = -8.627960 eV, new E0 = -687.221405 eV
+2026-09-28 17:27:18.360 INFO: Element 6: foundation E0 = -1037.167847 eV, correction = -0.505571 eV, new E0 = -1037.673418 eV
+2026-09-28 17:27:18.360 INFO: Element 7: foundation E0 = -1490.378174 eV, correction = 0.654061 eV, new E0 = -1489.724113 eV
+2026-09-28 17:27:18.360 INFO: Element 8: foundation E0 = -2047.592529 eV, correction = -0.817404 eV, new E0 = -2048.409933 eV
+2026-09-28 17:27:18.361 INFO: Element 9: foundation E0 = -2717.376465 eV, correction = 0.287315 eV, new E0 = -2717.089150 eV
+2026-09-28 17:27:18.361 INFO: Element 15: foundation E0 = -9290.515625 eV, correction = 3.094824 eV, new E0 = -9287.420801 eV
+2026-09-28 17:27:18.361 INFO: Element 16: foundation E0 = -10835.086914 eV, correction = -0.112848 eV, new E0 = -10835.199762 eV
+2026-09-28 17:27:18.361 INFO: Element 17: foundation E0 = -12522.258789 eV, correction = 0.152854 eV, new E0 = -12522.105935 eV
+2026-09-28 17:27:18.361 INFO: Element 24: foundation E0 = -28417.921875 eV, correction = 16.946472 eV, new E0 = -28400.975403 eV
+2026-09-28 17:27:18.361 INFO: Element 25: foundation E0 = -31315.437500 eV, correction = 16.953931 eV, new E0 = -31298.483569 eV
+2026-09-28 17:27:18.362 INFO: Element 26: foundation E0 = -34382.968750 eV, correction = 24.581153 eV, new E0 = -34358.387597 eV
+2026-09-28 17:27:18.362 INFO: Element 27: foundation E0 = -37622.691406 eV, correction = 22.410770 eV, new E0 = -37600.280636 eV
+2026-09-28 17:27:18.362 INFO: Element 28: foundation E0 = -41039.656250 eV, correction = 22.612290 eV, new E0 = -41017.043960 eV
+2026-09-28 17:27:18.362 INFO: Element 29: foundation E0 = -44635.363281 eV, correction = 26.618272 eV, new E0 = -44608.745009 eV
+2026-09-28 17:27:18.362 INFO: Element 30: foundation E0 = -48416.160156 eV, correction = 31.714779 eV, new E0 = -48384.445377 eV
+2026-09-28 17:27:18.362 INFO: Element 33: foundation E0 = -60840.089844 eV, correction = -6.347853 eV, new E0 = -60846.437697 eV
+2026-09-28 17:27:18.362 INFO: Element 35: foundation E0 = -70042.242188 eV, correction = -4.066928 eV, new E0 = -70046.309115 eV
+2026-09-28 17:27:18.363 INFO: Element 53: foundation E0 = -8099.596191 eV, correction = -0.283562 eV, new E0 = -8099.879753 eV
+2026-09-28 17:27:18.363 INFO: ================================================================================
+2026-09-28 17:27:18.363 INFO: FIT STATISTICS
+2026-09-28 17:27:18.363 INFO: ================================================================================
+2026-09-28 17:27:18.364 INFO: RMSE before E0 correction: 21.291453 eV
+2026-09-28 17:27:18.364 INFO: RMSE after E0 correction:  16.135126 eV
+2026-09-28 17:27:18.364 INFO: MAE before E0 correction:  11.967938 eV
+2026-09-28 17:27:18.364 INFO: MAE after E0 correction:   10.853965 eV
+2026-09-28 17:27:18.364 INFO: ================================================================================
+2026-09-28 17:27:18.365 INFO: Atomic Energies used (z: eV) for head Default: {1: -16.30783597597825, 5: -687.2214048368646, 6: -1037.6734178036152, 7: -1489.7241132976612, 8: -2048.4099331903367, 9: -2717.0891500300186, 15: -9287.420801015864, 16: -10835.199761586953, 17: -12522.105934582647, 24: -28400.97540254872, 25: -31298.48356856115, 26: -34358.38759735746, 27: -37600.28063605125, 28: -41017.04396011429, 29: -44608.745009046484, 30: -48384.44537726321, 33: -60846.43769680956, 35: -70046.30911513398, 53: -8099.8797534959995}
+2026-09-28 17:27:18.365 INFO: Processing datasets for head 'Default'
+2026-09-28 17:27:28.063 INFO: Combining 1 list datasets for head 'Default'
+2026-09-28 17:27:29.268 INFO: Combining 1 list datasets for head 'Default_valid'
+2026-09-28 17:27:29.269 INFO: Combined validation datasets for Default
+2026-09-28 17:27:29.269 INFO: Head 'Default' training dataset size: 8184
+2026-09-28 17:27:29.270 INFO: Computing average number of neighbors
+2026-09-28 17:27:32.381 INFO: Average number of neighbors: 24.950664438059455
+2026-09-28 17:27:32.382 INFO: During training the following quantities will be reported: energy, forces
+2026-09-28 17:27:32.382 INFO: ===========MODEL DETAILS===========
+2026-09-28 17:27:35.328 INFO: Loading FOUNDATION model
+2026-09-28 17:27:35.329 INFO: Using filtered elements: [np.int64(1), np.int64(5), np.int64(6), np.int64(7), np.int64(8), np.int64(9), np.int64(15), np.int64(16), np.int64(17), np.int64(24), np.int64(25), np.int64(26), np.int64(27), np.int64(28), np.int64(29), np.int64(30), np.int64(33), np.int64(35), np.int64(53)]
+2026-09-28 17:27:35.329 INFO: Model configuration extracted from foundation model
+2026-09-28 17:27:35.330 INFO: Using weighted loss function for fine-tuning
+2026-09-28 17:27:35.330 INFO: Message passing with hidden irreps 1024x0e+1024x1o+1024x2e)
+2026-09-28 17:27:35.330 INFO: 3 layers, each with correlation order: 2 (body order: 3) and spherical harmonics up to: l=3
+2026-09-28 17:27:35.330 INFO: Radial cutoff: 6.0 A (total receptive field for each atom: 18.0 A)
+2026-09-28 17:27:35.330 INFO: Distance transform for radial basis functions: None
+2026-09-28 17:27:39.094 INFO: ===========OPTIMIZER INFORMATION===========
+2026-09-28 17:27:39.094 INFO: Using ADAM as parameter optimizer
+2026-09-28 17:27:39.095 INFO: Batch size: 16
+2026-09-28 17:27:39.095 INFO: Using Exponential Moving Average with decay: 0.999
+2026-09-28 17:27:39.095 INFO: Number of gradient updates: 51150
+2026-09-28 17:27:39.095 INFO: Learning rate: 0.0001, weight decay: 0.0
+2026-09-28 17:27:39.095 INFO: WeightedEnergyForcesLoss(energy_weight=5.000, forces_weight=10.000)
+2026-09-28 17:27:39.097 INFO: === Layer's learning rates ===
+2026-09-28 17:27:39.098 INFO: Param group 0: lr = 0.0001
+2026-09-28 17:27:39.098 INFO: Param group 1: lr = 0.0001
+2026-09-28 17:27:39.098 INFO: Param group 2: lr = 0.0001
+2026-09-28 17:27:39.099 INFO: Param group 3: lr = 0.0001
+2026-09-28 17:27:39.099 INFO: Param group 4: lr = 0.0001
+2026-09-28 17:27:39.099 INFO: Param group 5: lr = 0.0001
+2026-09-28 17:27:39.099 INFO: Param group 6: lr = 0.0001
+2026-09-28 17:27:39.100 INFO: Stage Two (after 90 epochs) with loss function: WeightedEnergyForcesLoss(energy_weight=5.000, forces_weight=10.000), with energy weight : 5.0, forces weight : 10.0 and learning rate : 1e-05
+2026-09-28 17:27:39.723 INFO: Using gradient clipping with tolerance=1.000
+2026-09-28 17:27:39.724 INFO: 
+2026-09-28 17:27:39.724 INFO: ===========TRAINING===========
+2026-09-28 17:27:39.725 INFO: Started training, reporting errors on validation set
+2026-09-28 17:27:39.725 INFO: Loss metrics on validation set
+2026-09-28 17:28:00.145 INFO: Initial: head: Default, loss=0.53121596, RMSE_E_per_atom=  880.31 meV, RMSE_F=  597.80 meV / A
+2026-09-28 17:29:04.695 INFO: ===========VERIFYING SETTINGS===========
+2026-09-28 17:29:04.696 INFO: Stage Two is activated as start_stage_two was defined
+2026-09-28 17:29:04.696 INFO: MACE version: 0.3.16
+2026-09-28 17:29:04.862 INFO: CUDA version: 12.8, CUDA device: 0
+2026-09-28 17:29:06.213 INFO: Using foundation model foundation-omol.model as initial checkpoint.
+2026-09-28 17:29:06.215 INFO: ===========LOADING INPUT DATA===========
+2026-09-28 17:29:06.215 INFO: Using heads: ['Default']
+2026-09-28 17:29:06.215 INFO: Using the key specifications to parse data:
+2026-09-28 17:29:06.215 INFO: Default: KeySpecification(info_keys={'energy': 'REF_energy', 'stress': 'REF_stress', 'virials': 'REF_virials', 'dipole': 'dipole', 'head': 'head', 'elec_temp': 'elec_temp', 'total_charge': 'charge', 'polarizability': 'polarizability', 'total_spin': 'multiplicity'}, arrays_keys={'forces': 'REF_forces', 'charges': 'REF_charges'})
+2026-09-28 17:29:06.216 INFO: =============    Processing head Default     ===========
+2026-09-28 17:29:09.278 INFO: Training set 1/1 [energy: 8184, stress: 0, virials: 0, dipole components: 0, head: 8184, elec_temp: 0, total_charge: 8184, polarizability: 0, total_spin: 8184, forces: 8184, charges: 0]
+2026-09-28 17:29:09.323 INFO: Total Training set [energy: 8184, stress: 0, virials: 0, dipole components: 0, head: 8184, elec_temp: 0, total_charge: 8184, polarizability: 0, total_spin: 8184, forces: 8184, charges: 0]
+2026-09-28 17:29:09.717 INFO: Validation set 1/1 [energy: 1023, stress: 0, virials: 0, dipole components: 0, head: 1023, elec_temp: 0, total_charge: 1023, polarizability: 0, total_spin: 1023, forces: 1023, charges: 0]
+2026-09-28 17:29:09.723 INFO: Total Validation set [energy: 1023, stress: 0, virials: 0, dipole components: 0, head: 1023, elec_temp: 0, total_charge: 1023, polarizability: 0, total_spin: 1023, forces: 1023, charges: 0]
+2026-09-28 17:29:10.118 INFO: Test set 1/1 [energy: 1023, stress: 0, virials: 0, dipole components: 0, head: 1023, elec_temp: 0, total_charge: 1023, polarizability: 0, total_spin: 1023, forces: 1023, charges: 0]
+2026-09-28 17:29:10.124 INFO: Total Test set [energy: 1023, stress: 0, virials: 0, dipole components: 0, head: 1023, elec_temp: 0, total_charge: 1023, polarizability: 0, total_spin: 1023, forces: 1023, charges: 0]
+2026-09-28 17:29:10.124 INFO: Total number of configurations: train=8184, valid=1023, tests=[Default_Default: 1023],
+2026-09-28 17:29:10.176 INFO: Atomic Numbers used: [np.int64(1), np.int64(5), np.int64(6), np.int64(7), np.int64(8), np.int64(9), np.int64(15), np.int64(16), np.int64(17), np.int64(24), np.int64(25), np.int64(26), np.int64(27), np.int64(28), np.int64(29), np.int64(30), np.int64(33), np.int64(35), np.int64(53)]
+2026-09-28 17:29:10.177 INFO: Estimating E0s from foundation model predictions on training data
+2026-09-28 17:29:10.182 INFO: Estimating E0s using foundation model on 8184 configurations with 19 elements
+2026-09-28 17:33:29.935 INFO: ================================================================================
+2026-09-28 17:33:29.936 INFO: E0 ESTIMATION FROM FOUNDATION MODEL
+2026-09-28 17:33:29.936 INFO: ================================================================================
+2026-09-28 17:33:29.936 INFO: Rank of system: 19/19
+2026-09-28 17:33:29.937 INFO: Residuals: [2130641.18895093]
+2026-09-28 17:33:29.937 INFO: Element 1: foundation E0 = -15.990004 eV, correction = -0.317832 eV, new E0 = -16.307836 eV
+2026-09-28 17:33:29.937 INFO: Element 5: foundation E0 = -678.593445 eV, correction = -8.627960 eV, new E0 = -687.221405 eV
+2026-09-28 17:33:29.938 INFO: Element 6: foundation E0 = -1037.167847 eV, correction = -0.505571 eV, new E0 = -1037.673418 eV
+2026-09-28 17:33:29.938 INFO: Element 7: foundation E0 = -1490.378174 eV, correction = 0.654061 eV, new E0 = -1489.724113 eV
+2026-09-28 17:33:29.938 INFO: Element 8: foundation E0 = -2047.592529 eV, correction = -0.817404 eV, new E0 = -2048.409933 eV
+2026-09-28 17:33:29.938 INFO: Element 9: foundation E0 = -2717.376465 eV, correction = 0.287315 eV, new E0 = -2717.089150 eV
+2026-09-28 17:33:29.938 INFO: Element 15: foundation E0 = -9290.515625 eV, correction = 3.094824 eV, new E0 = -9287.420801 eV
+2026-09-28 17:33:29.939 INFO: Element 16: foundation E0 = -10835.086914 eV, correction = -0.112848 eV, new E0 = -10835.199762 eV
+2026-09-28 17:33:29.939 INFO: Element 17: foundation E0 = -12522.258789 eV, correction = 0.152854 eV, new E0 = -12522.105935 eV
+2026-09-28 17:33:29.939 INFO: Element 24: foundation E0 = -28417.921875 eV, correction = 16.946472 eV, new E0 = -28400.975403 eV
+2026-09-28 17:33:29.939 INFO: Element 25: foundation E0 = -31315.437500 eV, correction = 16.953931 eV, new E0 = -31298.483569 eV
+2026-09-28 17:33:29.939 INFO: Element 26: foundation E0 = -34382.968750 eV, correction = 24.581153 eV, new E0 = -34358.387597 eV
+2026-09-28 17:33:29.940 INFO: Element 27: foundation E0 = -37622.691406 eV, correction = 22.410770 eV, new E0 = -37600.280636 eV
+2026-09-28 17:33:29.940 INFO: Element 28: foundation E0 = -41039.656250 eV, correction = 22.612290 eV, new E0 = -41017.043960 eV
+2026-09-28 17:33:29.940 INFO: Element 29: foundation E0 = -44635.363281 eV, correction = 26.618272 eV, new E0 = -44608.745009 eV
+2026-09-28 17:33:29.940 INFO: Element 30: foundation E0 = -48416.160156 eV, correction = 31.714779 eV, new E0 = -48384.445377 eV
+2026-09-28 17:33:29.941 INFO: Element 33: foundation E0 = -60840.089844 eV, correction = -6.347853 eV, new E0 = -60846.437697 eV
+2026-09-28 17:33:29.941 INFO: Element 35: foundation E0 = -70042.242188 eV, correction = -4.066928 eV, new E0 = -70046.309115 eV
+2026-09-28 17:33:29.941 INFO: Element 53: foundation E0 = -8099.596191 eV, correction = -0.283562 eV, new E0 = -8099.879753 eV
+2026-09-28 17:33:29.941 INFO: ================================================================================
+2026-09-28 17:33:29.942 INFO: FIT STATISTICS
+2026-09-28 17:33:29.942 INFO: ================================================================================
+2026-09-28 17:33:29.942 INFO: RMSE before E0 correction: 21.291453 eV
+2026-09-28 17:33:29.942 INFO: RMSE after E0 correction:  16.135126 eV
+2026-09-28 17:33:29.943 INFO: MAE before E0 correction:  11.967938 eV
+2026-09-28 17:33:29.943 INFO: MAE after E0 correction:   10.853965 eV
+2026-09-28 17:33:29.943 INFO: ================================================================================
+2026-09-28 17:33:29.944 INFO: Atomic Energies used (z: eV) for head Default: {1: -16.30783597597825, 5: -687.2214048368646, 6: -1037.6734178036152, 7: -1489.7241132976612, 8: -2048.4099331903367, 9: -2717.0891500300186, 15: -9287.420801015864, 16: -10835.199761586953, 17: -12522.105934582647, 24: -28400.97540254872, 25: -31298.48356856115, 26: -34358.38759735746, 27: -37600.28063605125, 28: -41017.04396011429, 29: -44608.745009046484, 30: -48384.44537726321, 33: -60846.43769680956, 35: -70046.30911513398, 53: -8099.8797534959995}
+2026-09-28 17:33:29.944 INFO: Processing datasets for head 'Default'
+2026-09-28 17:33:39.689 INFO: Combining 1 list datasets for head 'Default'
+2026-09-28 17:33:40.897 INFO: Combining 1 list datasets for head 'Default_valid'
+2026-09-28 17:33:40.897 INFO: Combined validation datasets for Default
+2026-09-28 17:33:40.898 INFO: Head 'Default' training dataset size: 8184
+2026-09-28 17:33:40.898 INFO: Computing average number of neighbors
+2026-09-28 17:33:44.983 INFO: Average number of neighbors: 24.952850824230797
+2026-09-28 17:33:44.984 INFO: During training the following quantities will be reported: energy, forces
+2026-09-28 17:33:44.984 INFO: ===========MODEL DETAILS===========
+2026-09-28 17:33:49.011 INFO: Loading FOUNDATION model
+2026-09-28 17:33:49.013 INFO: Using filtered elements: [np.int64(1), np.int64(5), np.int64(6), np.int64(7), np.int64(8), np.int64(9), np.int64(15), np.int64(16), np.int64(17), np.int64(24), np.int64(25), np.int64(26), np.int64(27), np.int64(28), np.int64(29), np.int64(30), np.int64(33), np.int64(35), np.int64(53)]
+2026-09-28 17:33:49.014 INFO: Model configuration extracted from foundation model
+2026-09-28 17:33:49.014 INFO: Using weighted loss function for fine-tuning
+2026-09-28 17:33:49.014 INFO: Message passing with hidden irreps 1024x0e+1024x1o+1024x2e)
+2026-09-28 17:33:49.014 INFO: 3 layers, each with correlation order: 2 (body order: 3) and spherical harmonics up to: l=3
+2026-09-28 17:33:49.015 INFO: Radial cutoff: 6.0 A (total receptive field for each atom: 18.0 A)
+2026-09-28 17:33:49.015 INFO: Distance transform for radial basis functions: None
+2026-09-28 17:33:52.822 INFO: ===========OPTIMIZER INFORMATION===========
+2026-09-28 17:33:52.823 INFO: Using ADAM as parameter optimizer
+2026-09-28 17:33:52.823 INFO: Batch size: 8
+2026-09-28 17:33:52.823 INFO: Using Exponential Moving Average with decay: 0.999
+2026-09-28 17:33:52.823 INFO: Number of gradient updates: 102300
+2026-09-28 17:33:52.823 INFO: Learning rate: 0.0001, weight decay: 0.0
+2026-09-28 17:33:52.824 INFO: WeightedEnergyForcesLoss(energy_weight=5.000, forces_weight=10.000)
+2026-09-28 17:33:52.826 INFO: === Layer's learning rates ===
+2026-09-28 17:33:52.827 INFO: Param group 0: lr = 0.0001
+2026-09-28 17:33:52.827 INFO: Param group 1: lr = 0.0001
+2026-09-28 17:33:52.827 INFO: Param group 2: lr = 0.0001
+2026-09-28 17:33:52.827 INFO: Param group 3: lr = 0.0001
+2026-09-28 17:33:52.828 INFO: Param group 4: lr = 0.0001
+2026-09-28 17:33:52.828 INFO: Param group 5: lr = 0.0001
+2026-09-28 17:33:52.828 INFO: Param group 6: lr = 0.0001
+2026-09-28 17:33:52.829 INFO: Stage Two (after 90 epochs) with loss function: WeightedEnergyForcesLoss(energy_weight=5.000, forces_weight=10.000), with energy weight : 5.0, forces weight : 10.0 and learning rate : 1e-05
+2026-09-28 17:33:53.081 INFO: Using gradient clipping with tolerance=1.000
+2026-09-28 17:33:53.082 INFO: 
+2026-09-28 17:33:53.082 INFO: ===========TRAINING===========
+2026-09-28 17:33:53.082 INFO: Started training, reporting errors on validation set
+2026-09-28 17:33:53.082 INFO: Loss metrics on validation set
+2026-09-28 17:34:16.950 INFO: Initial: head: Default, loss=1.09441029, RMSE_E_per_atom=  880.31 meV, RMSE_F=  597.80 meV / A
+2026-09-28 17:42:01.013 INFO: Epoch 0: head: Default, loss=0.44290168, RMSE_E_per_atom=  716.24 meV, RMSE_F=  235.28 meV / A
+2026-09-28 17:49:45.807 INFO: Epoch 1: head: Default, loss=0.31776561, RMSE_E_per_atom=  531.11 meV, RMSE_F=  248.61 meV / A
+2026-09-28 17:57:28.620 INFO: Epoch 2: head: Default, loss=0.26839844, RMSE_E_per_atom=  436.75 meV, RMSE_F=  254.89 meV / A
+2026-09-28 18:05:09.788 INFO: Epoch 3: head: Default, loss=0.26965878, RMSE_E_per_atom=  380.97 meV, RMSE_F=  276.40 meV / A
+2026-09-28 18:12:51.120 INFO: Epoch 4: head: Default, loss=0.25549568, RMSE_E_per_atom=  339.02 meV, RMSE_F=  278.94 meV / A
+2026-09-28 18:20:33.230 INFO: Epoch 5: head: Default, loss=0.27910729, RMSE_E_per_atom=  309.19 meV, RMSE_F=  303.06 meV / A
+2026-09-28 18:28:15.207 INFO: Epoch 6: head: Default, loss=0.28198928, RMSE_E_per_atom=  288.44 meV, RMSE_F=  309.88 meV / A
+2026-09-28 18:35:56.993 INFO: Epoch 7: head: Default, loss=0.31529825, RMSE_E_per_atom=  265.83 meV, RMSE_F=  335.19 meV / A
+2026-09-28 18:43:40.326 INFO: Epoch 8: head: Default, loss=0.37679616, RMSE_E_per_atom=  247.40 meV, RMSE_F=  373.35 meV / A
+2026-09-28 18:51:23.010 INFO: Epoch 9: head: Default, loss=0.42997092, RMSE_E_per_atom=  229.52 meV, RMSE_F=  403.72 meV / A
+2026-09-28 18:59:03.921 INFO: Epoch 10: head: Default, loss=0.45441709, RMSE_E_per_atom=  215.30 meV, RMSE_F=  417.48 meV / A
+2026-09-28 19:06:47.672 INFO: Epoch 11: head: Default, loss=0.50182037, RMSE_E_per_atom=  198.98 meV, RMSE_F=  441.81 meV / A
+2026-09-28 19:32:37.903 INFO: ===========VERIFYING SETTINGS===========
+2026-09-28 19:32:39.488 INFO: Stage Two is activated as start_stage_two was defined
+2026-09-28 19:32:39.488 INFO: MACE version: 0.3.16
+2026-09-28 19:32:39.670 INFO: CUDA version: 12.8, CUDA device: 0
+2026-09-28 19:32:48.311 INFO: Using foundation model foundation-omol.model as initial checkpoint.
+2026-09-28 19:32:48.323 INFO: ===========LOADING INPUT DATA===========
+2026-09-28 19:32:48.323 INFO: Using heads: ['Default']
+2026-09-28 19:32:48.324 INFO: Using the key specifications to parse data:
+2026-09-28 19:32:48.324 INFO: Default: KeySpecification(info_keys={'energy': 'REF_energy', 'stress': 'REF_stress', 'virials': 'REF_virials', 'dipole': 'dipole', 'head': 'head', 'elec_temp': 'elec_temp', 'total_charge': 'charge', 'polarizability': 'polarizability', 'total_spin': 'multiplicity'}, arrays_keys={'forces': 'REF_forces', 'charges': 'REF_charges'})
+2026-09-28 19:32:48.324 INFO: =============    Processing head Default     ===========
+2026-09-28 19:32:56.058 INFO: Training set 1/1 [energy: 8184, stress: 0, virials: 0, dipole components: 0, head: 8184, elec_temp: 0, total_charge: 8184, polarizability: 0, total_spin: 8184, forces: 8184, charges: 0]
+2026-09-28 19:32:56.102 INFO: Total Training set [energy: 8184, stress: 0, virials: 0, dipole components: 0, head: 8184, elec_temp: 0, total_charge: 8184, polarizability: 0, total_spin: 8184, forces: 8184, charges: 0]
+2026-09-28 19:32:58.735 INFO: Validation set 1/1 [energy: 1023, stress: 0, virials: 0, dipole components: 0, head: 1023, elec_temp: 0, total_charge: 1023, polarizability: 0, total_spin: 1023, forces: 1023, charges: 0]
+2026-09-28 19:32:58.740 INFO: Total Validation set [energy: 1023, stress: 0, virials: 0, dipole components: 0, head: 1023, elec_temp: 0, total_charge: 1023, polarizability: 0, total_spin: 1023, forces: 1023, charges: 0]
+2026-09-28 19:33:00.972 INFO: Test set 1/1 [energy: 1023, stress: 0, virials: 0, dipole components: 0, head: 1023, elec_temp: 0, total_charge: 1023, polarizability: 0, total_spin: 1023, forces: 1023, charges: 0]
+2026-09-28 19:33:00.978 INFO: Total Test set [energy: 1023, stress: 0, virials: 0, dipole components: 0, head: 1023, elec_temp: 0, total_charge: 1023, polarizability: 0, total_spin: 1023, forces: 1023, charges: 0]
+2026-09-28 19:33:00.979 INFO: Total number of configurations: train=8184, valid=1023, tests=[Default_Default: 1023],
+2026-09-28 19:33:01.030 INFO: Atomic Numbers used: [np.int64(1), np.int64(5), np.int64(6), np.int64(7), np.int64(8), np.int64(9), np.int64(15), np.int64(16), np.int64(17), np.int64(24), np.int64(25), np.int64(26), np.int64(27), np.int64(28), np.int64(29), np.int64(30), np.int64(33), np.int64(35), np.int64(53)]
+2026-09-28 19:33:01.030 INFO: Estimating E0s from foundation model predictions on training data
+2026-09-28 19:33:01.045 INFO: Estimating E0s using foundation model on 8184 configurations with 19 elements
+2026-09-28 19:37:09.456 INFO: ================================================================================
+2026-09-28 19:37:09.457 INFO: E0 ESTIMATION FROM FOUNDATION MODEL
+2026-09-28 19:37:09.457 INFO: ================================================================================
+2026-09-28 19:37:09.458 INFO: Rank of system: 19/19
+2026-09-28 19:37:09.458 INFO: Residuals: [122178.29049037]
+2026-09-28 19:37:09.458 INFO: Element 1: foundation E0 = -15.990004 eV, correction = -0.154878 eV, new E0 = -16.144882 eV
+2026-09-28 19:37:09.459 INFO: Element 5: foundation E0 = -678.593445 eV, correction = -0.384160 eV, new E0 = -678.977605 eV
+2026-09-28 19:37:09.459 INFO: Element 6: foundation E0 = -1037.167847 eV, correction = 0.188923 eV, new E0 = -1036.978924 eV
+2026-09-28 19:37:09.459 INFO: Element 7: foundation E0 = -1490.378174 eV, correction = 0.476410 eV, new E0 = -1489.901764 eV
+2026-09-28 19:37:09.459 INFO: Element 8: foundation E0 = -2047.592529 eV, correction = 0.568318 eV, new E0 = -2047.024211 eV
+2026-09-28 19:37:09.460 INFO: Element 9: foundation E0 = -2717.376465 eV, correction = 0.765286 eV, new E0 = -2716.611179 eV
+2026-09-28 19:37:09.460 INFO: Element 15: foundation E0 = -9290.515625 eV, correction = 1.410812 eV, new E0 = -9289.104813 eV
+2026-09-28 19:37:09.460 INFO: Element 16: foundation E0 = -10835.086914 eV, correction = 0.316433 eV, new E0 = -10834.770481 eV
+2026-09-28 19:37:09.460 INFO: Element 17: foundation E0 = -12522.258789 eV, correction = 0.320638 eV, new E0 = -12521.938151 eV
+2026-09-28 19:37:09.461 INFO: Element 24: foundation E0 = -28417.921875 eV, correction = -0.238959 eV, new E0 = -28418.160834 eV
+2026-09-28 19:37:09.461 INFO: Element 25: foundation E0 = -31315.437500 eV, correction = -0.114852 eV, new E0 = -31315.552352 eV
+2026-09-28 19:37:09.461 INFO: Element 26: foundation E0 = -34382.968750 eV, correction = 2.236317 eV, new E0 = -34380.732433 eV
+2026-09-28 19:37:09.461 INFO: Element 27: foundation E0 = -37622.691406 eV, correction = 1.141610 eV, new E0 = -37621.549797 eV
+2026-09-28 19:37:09.461 INFO: Element 28: foundation E0 = -41039.656250 eV, correction = 0.405631 eV, new E0 = -41039.250619 eV
+2026-09-28 19:37:09.462 INFO: Element 29: foundation E0 = -44635.363281 eV, correction = 0.480916 eV, new E0 = -44634.882365 eV
+2026-09-28 19:37:09.462 INFO: Element 30: foundation E0 = -48416.160156 eV, correction = 3.290168 eV, new E0 = -48412.869989 eV
+2026-09-28 19:37:09.462 INFO: Element 33: foundation E0 = -60840.089844 eV, correction = -3.426439 eV, new E0 = -60843.516283 eV
+2026-09-28 19:37:09.462 INFO: Element 35: foundation E0 = -70042.242188 eV, correction = -3.497021 eV, new E0 = -70045.739208 eV
+2026-09-28 19:37:09.463 INFO: Element 53: foundation E0 = -8099.596191 eV, correction = -1.620998 eV, new E0 = -8101.217189 eV
+2026-09-28 19:37:09.463 INFO: ================================================================================
+2026-09-28 19:37:09.463 INFO: FIT STATISTICS
+2026-09-28 19:37:09.464 INFO: ================================================================================
+2026-09-28 19:37:09.464 INFO: RMSE before E0 correction: 7.394341 eV
+2026-09-28 19:37:09.464 INFO: RMSE after E0 correction:  3.863796 eV
+2026-09-28 19:37:09.464 INFO: MAE before E0 correction:  5.559337 eV
+2026-09-28 19:37:09.464 INFO: MAE after E0 correction:   1.995852 eV
+2026-09-28 19:37:09.465 INFO: ================================================================================
+2026-09-28 19:37:09.465 INFO: Atomic Energies used (z: eV) for head Default: {1: -16.144881549761696, 5: -678.9776046907358, 6: -1036.978923818356, 7: -1489.9017639993142, 8: -2047.0242110841511, 9: -2716.611178900156, 15: -9289.10481312787, 16: -10834.770480577923, 17: -12521.938150669079, 24: -28418.160834167724, 25: -31315.552352135655, 26: -34380.73243258454, 27: -37621.54979658363, 28: -41039.2506193743, 29: -44634.88236546114, 30: -48412.869988611616, 33: -60843.51628313787, 35: -70045.739208363, 53: -8101.217189438262}
+2026-09-28 19:37:09.466 INFO: Processing datasets for head 'Default'
+2026-09-28 19:37:19.129 INFO: Combining 1 list datasets for head 'Default'
+2026-09-28 19:37:20.314 INFO: Combining 1 list datasets for head 'Default_valid'
+2026-09-28 19:37:20.315 INFO: Combined validation datasets for Default
+2026-09-28 19:37:20.315 INFO: Head 'Default' training dataset size: 8184
+2026-09-28 19:37:20.315 INFO: Computing average number of neighbors
+2026-09-28 19:37:24.426 INFO: Average number of neighbors: 24.968773585230778
+2026-09-28 19:37:24.427 INFO: During training the following quantities will be reported: energy, forces
+2026-09-28 19:37:24.427 INFO: ===========MODEL DETAILS===========
+2026-09-28 19:37:28.536 INFO: Loading FOUNDATION model
+2026-09-28 19:37:28.538 INFO: Using filtered elements: [np.int64(1), np.int64(5), np.int64(6), np.int64(7), np.int64(8), np.int64(9), np.int64(15), np.int64(16), np.int64(17), np.int64(24), np.int64(25), np.int64(26), np.int64(27), np.int64(28), np.int64(29), np.int64(30), np.int64(33), np.int64(35), np.int64(53)]
+2026-09-28 19:37:28.538 INFO: Model configuration extracted from foundation model
+2026-09-28 19:37:28.538 INFO: Using weighted loss function for fine-tuning
+2026-09-28 19:37:28.539 INFO: Message passing with hidden irreps 1024x0e+1024x1o+1024x2e)
+2026-09-28 19:37:28.539 INFO: 3 layers, each with correlation order: 2 (body order: 3) and spherical harmonics up to: l=3
+2026-09-28 19:37:28.539 INFO: Radial cutoff: 6.0 A (total receptive field for each atom: 18.0 A)
+2026-09-28 19:37:28.539 INFO: Distance transform for radial basis functions: None
+2026-09-28 19:37:32.311 INFO: ===========OPTIMIZER INFORMATION===========
+2026-09-28 19:37:32.311 INFO: Using ADAM as parameter optimizer
+2026-09-28 19:37:32.312 INFO: Batch size: 8
+2026-09-28 19:37:32.312 INFO: Using Exponential Moving Average with decay: 0.999
+2026-09-28 19:37:32.312 INFO: Number of gradient updates: 102300
+2026-09-28 19:37:32.312 INFO: Learning rate: 0.0001, weight decay: 0.0
+2026-09-28 19:37:32.312 INFO: WeightedEnergyForcesLoss(energy_weight=5.000, forces_weight=10.000)
+2026-09-28 19:37:32.314 INFO: === Layer's learning rates ===
+2026-09-28 19:37:32.315 INFO: Param group 0: lr = 0.0001
+2026-09-28 19:37:32.315 INFO: Param group 1: lr = 0.0001
+2026-09-28 19:37:32.315 INFO: Param group 2: lr = 0.0001
+2026-09-28 19:37:32.316 INFO: Param group 3: lr = 0.0001
+2026-09-28 19:37:32.316 INFO: Param group 4: lr = 0.0001
+2026-09-28 19:37:32.316 INFO: Param group 5: lr = 0.0001
+2026-09-28 19:37:32.316 INFO: Param group 6: lr = 0.0001
+2026-09-28 19:37:32.316 INFO: Stage Two (after 90 epochs) with loss function: WeightedEnergyForcesLoss(energy_weight=5.000, forces_weight=10.000), with energy weight : 5.0, forces weight : 10.0 and learning rate : 1e-05
+2026-09-28 19:37:32.909 INFO: Using gradient clipping with tolerance=1.000
+2026-09-28 19:37:32.910 INFO: 
+2026-09-28 19:37:32.910 INFO: ===========TRAINING===========
+2026-09-28 19:37:32.910 INFO: Started training, reporting errors on validation set
+2026-09-28 19:37:32.910 INFO: Loss metrics on validation set
+2026-09-28 19:37:58.433 INFO: Initial: head: Default, loss=0.43258158, RMSE_E_per_atom=  235.23 meV, RMSE_F=  485.18 meV / A
+2026-09-28 19:45:38.373 INFO: Epoch 0: head: Default, loss=0.02952341, RMSE_E_per_atom=   54.66 meV, RMSE_F=  115.60 meV / A
+2026-09-28 19:53:17.539 INFO: Epoch 1: head: Default, loss=0.02027092, RMSE_E_per_atom=   38.71 meV, RMSE_F=   96.54 meV / A
+2026-09-28 20:00:56.494 INFO: Epoch 2: head: Default, loss=0.01567576, RMSE_E_per_atom=   30.25 meV, RMSE_F=   85.16 meV / A
+2026-09-28 20:08:35.576 INFO: Epoch 3: head: Default, loss=0.01368217, RMSE_E_per_atom=   25.52 meV, RMSE_F=   79.47 meV / A
+2026-09-28 20:16:15.662 INFO: Epoch 4: head: Default, loss=0.01181455, RMSE_E_per_atom=   22.70 meV, RMSE_F=   73.78 meV / A
+2026-09-28 20:23:53.463 INFO: Epoch 5: head: Default, loss=0.01069698, RMSE_E_per_atom=   20.30 meV, RMSE_F=   70.09 meV / A
+2026-09-28 20:31:32.793 INFO: Epoch 6: head: Default, loss=0.00946121, RMSE_E_per_atom=   18.52 meV, RMSE_F=   66.12 meV / A
+2026-09-28 20:39:13.948 INFO: Epoch 7: head: Default, loss=0.00962358, RMSE_E_per_atom=   17.20 meV, RMSE_F=   66.27 meV / A
+2026-09-28 20:46:51.849 INFO: Epoch 8: head: Default, loss=0.00938264, RMSE_E_per_atom=   16.16 meV, RMSE_F=   65.26 meV / A
+2026-09-28 20:54:30.090 INFO: Epoch 9: head: Default, loss=0.00902359, RMSE_E_per_atom=   15.11 meV, RMSE_F=   63.91 meV / A
+2026-09-28 21:02:08.597 INFO: Epoch 10: head: Default, loss=0.00870991, RMSE_E_per_atom=   14.13 meV, RMSE_F=   62.70 meV / A
+2026-09-28 21:09:49.070 INFO: Epoch 11: head: Default, loss=0.00812650, RMSE_E_per_atom=   13.53 meV, RMSE_F=   60.63 meV / A
+2026-09-28 21:17:27.287 INFO: Epoch 12: head: Default, loss=0.00804361, RMSE_E_per_atom=   12.82 meV, RMSE_F=   60.18 meV / A
+2026-09-28 21:25:05.582 INFO: Epoch 13: head: Default, loss=0.00772544, RMSE_E_per_atom=   12.34 meV, RMSE_F=   58.99 meV / A
+2026-09-28 21:32:45.555 INFO: Epoch 14: head: Default, loss=0.00721762, RMSE_E_per_atom=   11.67 meV, RMSE_F=   57.18 meV / A
+2026-09-28 21:40:24.772 INFO: Epoch 15: head: Default, loss=0.00666523, RMSE_E_per_atom=   10.83 meV, RMSE_F=   55.07 meV / A
+2026-09-28 21:48:03.954 INFO: Epoch 16: head: Default, loss=0.00627514, RMSE_E_per_atom=   10.79 meV, RMSE_F=   53.41 meV / A
+2026-09-28 21:55:42.352 INFO: Epoch 17: head: Default, loss=0.00600467, RMSE_E_per_atom=   10.51 meV, RMSE_F=   52.17 meV / A
+2026-09-28 22:03:20.763 INFO: Epoch 18: head: Default, loss=0.00587643, RMSE_E_per_atom=   10.21 meV, RMSE_F=   51.60 meV / A
+2026-09-28 22:10:58.696 INFO: Epoch 19: head: Default, loss=0.00545520, RMSE_E_per_atom=    9.83 meV, RMSE_F=   49.87 meV / A
+2026-09-28 22:18:39.800 INFO: Epoch 20: head: Default, loss=0.00524349, RMSE_E_per_atom=    9.52 meV, RMSE_F=   48.90 meV / A
+2026-09-28 22:26:19.821 INFO: Epoch 21: head: Default, loss=0.00521476, RMSE_E_per_atom=    9.47 meV, RMSE_F=   48.67 meV / A
+2026-09-28 22:33:59.318 INFO: Epoch 22: head: Default, loss=0.00533044, RMSE_E_per_atom=    9.37 meV, RMSE_F=   49.03 meV / A
+2026-09-28 22:41:38.894 INFO: Epoch 23: head: Default, loss=0.00533041, RMSE_E_per_atom=    9.18 meV, RMSE_F=   48.96 meV / A
+2026-09-29 08:43:39.814 INFO: ===========VERIFYING SETTINGS===========
+2026-09-29 08:43:41.164 INFO: Stage Two is activated as start_stage_two was defined
+2026-09-29 08:43:41.166 INFO: MACE version: 0.3.16
+2026-09-29 08:43:41.348 INFO: CUDA version: 12.8, CUDA device: 0
+2026-09-29 08:43:55.698 INFO: Using foundation model foundation-omol.model as initial checkpoint.
+2026-09-29 08:43:55.702 INFO: ===========LOADING INPUT DATA===========
+2026-09-29 08:43:55.702 INFO: Using heads: ['Default']
+2026-09-29 08:43:55.702 INFO: Using the key specifications to parse data:
+2026-09-29 08:43:55.702 INFO: Default: KeySpecification(info_keys={'energy': 'REF_energy', 'stress': 'REF_stress', 'virials': 'REF_virials', 'dipole': 'dipole', 'head': 'head', 'elec_temp': 'elec_temp', 'total_charge': 'charge', 'polarizability': 'polarizability', 'total_spin': 'multiplicity'}, arrays_keys={'forces': 'REF_forces', 'charges': 'REF_charges'})
+2026-09-29 08:43:55.702 INFO: =============    Processing head Default     ===========
+2026-09-29 08:44:02.561 INFO: Training set 1/1 [energy: 8184, stress: 0, virials: 0, dipole components: 0, head: 8184, elec_temp: 0, total_charge: 8184, polarizability: 0, total_spin: 8184, forces: 8184, charges: 0]
+2026-09-29 08:44:02.607 INFO: Total Training set [energy: 8184, stress: 0, virials: 0, dipole components: 0, head: 8184, elec_temp: 0, total_charge: 8184, polarizability: 0, total_spin: 8184, forces: 8184, charges: 0]
+2026-09-29 08:44:05.034 INFO: Validation set 1/1 [energy: 1023, stress: 0, virials: 0, dipole components: 0, head: 1023, elec_temp: 0, total_charge: 1023, polarizability: 0, total_spin: 1023, forces: 1023, charges: 0]
+2026-09-29 08:44:05.040 INFO: Total Validation set [energy: 1023, stress: 0, virials: 0, dipole components: 0, head: 1023, elec_temp: 0, total_charge: 1023, polarizability: 0, total_spin: 1023, forces: 1023, charges: 0]
+2026-09-29 08:44:08.214 INFO: Test set 1/1 [energy: 1023, stress: 0, virials: 0, dipole components: 0, head: 1023, elec_temp: 0, total_charge: 1023, polarizability: 0, total_spin: 1023, forces: 1023, charges: 0]
+2026-09-29 08:44:08.221 INFO: Total Test set [energy: 1023, stress: 0, virials: 0, dipole components: 0, head: 1023, elec_temp: 0, total_charge: 1023, polarizability: 0, total_spin: 1023, forces: 1023, charges: 0]
+2026-09-29 08:44:08.221 INFO: Total number of configurations: train=8184, valid=1023, tests=[Default_Default: 1023],
+2026-09-29 08:44:08.276 INFO: Atomic Numbers used: [np.int64(1), np.int64(5), np.int64(6), np.int64(7), np.int64(8), np.int64(9), np.int64(15), np.int64(16), np.int64(17), np.int64(24), np.int64(25), np.int64(26), np.int64(27), np.int64(28), np.int64(29), np.int64(30), np.int64(33), np.int64(35), np.int64(53)]
+2026-09-29 08:44:08.276 INFO: Estimating E0s from foundation model predictions on training data
+2026-09-29 08:44:08.292 INFO: Estimating E0s using foundation model on 8184 configurations with 19 elements
+2026-09-29 08:48:20.304 INFO: ================================================================================
+2026-09-29 08:48:20.305 INFO: E0 ESTIMATION FROM FOUNDATION MODEL
+2026-09-29 08:48:20.306 INFO: ================================================================================
+2026-09-29 08:48:20.306 INFO: Rank of system: 19/19
+2026-09-29 08:48:20.306 INFO: Residuals: [122178.29049037]
+2026-09-29 08:48:20.307 INFO: Element 1: foundation E0 = -15.990004 eV, correction = -0.154878 eV, new E0 = -16.144882 eV
+2026-09-29 08:48:20.307 INFO: Element 5: foundation E0 = -678.593445 eV, correction = -0.384160 eV, new E0 = -678.977605 eV
+2026-09-29 08:48:20.307 INFO: Element 6: foundation E0 = -1037.167847 eV, correction = 0.188923 eV, new E0 = -1036.978924 eV
+2026-09-29 08:48:20.307 INFO: Element 7: foundation E0 = -1490.378174 eV, correction = 0.476410 eV, new E0 = -1489.901764 eV
+2026-09-29 08:48:20.308 INFO: Element 8: foundation E0 = -2047.592529 eV, correction = 0.568318 eV, new E0 = -2047.024211 eV
+2026-09-29 08:48:20.308 INFO: Element 9: foundation E0 = -2717.376465 eV, correction = 0.765286 eV, new E0 = -2716.611179 eV
+2026-09-29 08:48:20.308 INFO: Element 15: foundation E0 = -9290.515625 eV, correction = 1.410812 eV, new E0 = -9289.104813 eV
+2026-09-29 08:48:20.308 INFO: Element 16: foundation E0 = -10835.086914 eV, correction = 0.316433 eV, new E0 = -10834.770481 eV
+2026-09-29 08:48:20.309 INFO: Element 17: foundation E0 = -12522.258789 eV, correction = 0.320638 eV, new E0 = -12521.938151 eV
+2026-09-29 08:48:20.309 INFO: Element 24: foundation E0 = -28417.921875 eV, correction = -0.238959 eV, new E0 = -28418.160834 eV
+2026-09-29 08:48:20.309 INFO: Element 25: foundation E0 = -31315.437500 eV, correction = -0.114852 eV, new E0 = -31315.552352 eV
+2026-09-29 08:48:20.309 INFO: Element 26: foundation E0 = -34382.968750 eV, correction = 2.236317 eV, new E0 = -34380.732433 eV
+2026-09-29 08:48:20.310 INFO: Element 27: foundation E0 = -37622.691406 eV, correction = 1.141610 eV, new E0 = -37621.549797 eV
+2026-09-29 08:48:20.310 INFO: Element 28: foundation E0 = -41039.656250 eV, correction = 0.405631 eV, new E0 = -41039.250619 eV
+2026-09-29 08:48:20.310 INFO: Element 29: foundation E0 = -44635.363281 eV, correction = 0.480916 eV, new E0 = -44634.882365 eV
+2026-09-29 08:48:20.310 INFO: Element 30: foundation E0 = -48416.160156 eV, correction = 3.290168 eV, new E0 = -48412.869989 eV
+2026-09-29 08:48:20.310 INFO: Element 33: foundation E0 = -60840.089844 eV, correction = -3.426439 eV, new E0 = -60843.516283 eV
+2026-09-29 08:48:20.311 INFO: Element 35: foundation E0 = -70042.242188 eV, correction = -3.497021 eV, new E0 = -70045.739208 eV
+2026-09-29 08:48:20.311 INFO: Element 53: foundation E0 = -8099.596191 eV, correction = -1.620998 eV, new E0 = -8101.217189 eV
+2026-09-29 08:48:20.312 INFO: ================================================================================
+2026-09-29 08:48:20.312 INFO: FIT STATISTICS
+2026-09-29 08:48:20.312 INFO: ================================================================================
+2026-09-29 08:48:20.312 INFO: RMSE before E0 correction: 7.394341 eV
+2026-09-29 08:48:20.313 INFO: RMSE after E0 correction:  3.863796 eV
+2026-09-29 08:48:20.313 INFO: MAE before E0 correction:  5.559337 eV
+2026-09-29 08:48:20.313 INFO: MAE after E0 correction:   1.995852 eV
+2026-09-29 08:48:20.313 INFO: ================================================================================
+2026-09-29 08:48:20.314 INFO: Atomic Energies used (z: eV) for head Default: {1: -16.144881549761696, 5: -678.9776046907358, 6: -1036.978923818356, 7: -1489.9017639993142, 8: -2047.0242110841511, 9: -2716.611178900156, 15: -9289.10481312787, 16: -10834.770480577923, 17: -12521.938150669079, 24: -28418.160834167724, 25: -31315.552352135655, 26: -34380.73243258454, 27: -37621.54979658363, 28: -41039.2506193743, 29: -44634.88236546114, 30: -48412.869988611616, 33: -60843.51628313787, 35: -70045.739208363, 53: -8101.217189438262}
+2026-09-29 08:48:20.314 INFO: Processing datasets for head 'Default'
+2026-09-29 08:48:30.058 INFO: Combining 1 list datasets for head 'Default'
+2026-09-29 08:48:31.263 INFO: Combining 1 list datasets for head 'Default_valid'
+2026-09-29 08:48:31.263 INFO: Combined validation datasets for Default
+2026-09-29 08:48:31.264 INFO: Head 'Default' training dataset size: 8184
+2026-09-29 08:48:31.264 INFO: Computing average number of neighbors
+2026-09-29 08:48:35.273 INFO: Average number of neighbors: 24.968773585230778
+2026-09-29 08:48:35.274 INFO: During training the following quantities will be reported: energy, forces
+2026-09-29 08:48:35.274 INFO: ===========MODEL DETAILS===========
+2026-09-29 08:48:39.325 INFO: Loading FOUNDATION model
+2026-09-29 08:48:39.326 INFO: Using filtered elements: [np.int64(1), np.int64(5), np.int64(6), np.int64(7), np.int64(8), np.int64(9), np.int64(15), np.int64(16), np.int64(17), np.int64(24), np.int64(25), np.int64(26), np.int64(27), np.int64(28), np.int64(29), np.int64(30), np.int64(33), np.int64(35), np.int64(53)]
+2026-09-29 08:48:39.327 INFO: Model configuration extracted from foundation model
+2026-09-29 08:48:39.327 INFO: Using weighted loss function for fine-tuning
+2026-09-29 08:48:39.327 INFO: Message passing with hidden irreps 1024x0e+1024x1o+1024x2e)
+2026-09-29 08:48:39.327 INFO: 3 layers, each with correlation order: 2 (body order: 3) and spherical harmonics up to: l=3
+2026-09-29 08:48:39.328 INFO: Radial cutoff: 6.0 A (total receptive field for each atom: 18.0 A)
+2026-09-29 08:48:39.328 INFO: Distance transform for radial basis functions: None
+2026-09-29 08:48:43.135 INFO: ===========OPTIMIZER INFORMATION===========
+2026-09-29 08:48:43.135 INFO: Using ADAM as parameter optimizer
+2026-09-29 08:48:43.135 INFO: Batch size: 8
+2026-09-29 08:48:43.136 INFO: Using Exponential Moving Average with decay: 0.999
+2026-09-29 08:48:43.136 INFO: Number of gradient updates: 102300
+2026-09-29 08:48:43.136 INFO: Learning rate: 0.0001, weight decay: 0.0
+2026-09-29 08:48:43.136 INFO: WeightedEnergyForcesLoss(energy_weight=5.000, forces_weight=10.000)
+2026-09-29 08:48:43.138 INFO: === Layer's learning rates ===
+2026-09-29 08:48:43.139 INFO: Param group 0: lr = 0.0001
+2026-09-29 08:48:43.139 INFO: Param group 1: lr = 0.0001
+2026-09-29 08:48:43.139 INFO: Param group 2: lr = 0.0001
+2026-09-29 08:48:43.139 INFO: Param group 3: lr = 0.0001
+2026-09-29 08:48:43.140 INFO: Param group 4: lr = 0.0001
+2026-09-29 08:48:43.140 INFO: Param group 5: lr = 0.0001
+2026-09-29 08:48:43.140 INFO: Param group 6: lr = 0.0001
+2026-09-29 08:48:43.140 INFO: Stage Two (after 90 epochs) with loss function: WeightedEnergyForcesLoss(energy_weight=5.000, forces_weight=10.000), with energy weight : 5.0, forces weight : 10.0 and learning rate : 1e-05
+2026-09-29 08:48:44.243 WARNING: No SWA checkpoint found, while SWA is enabled. Compare the swa_start parameter and the latest checkpoint.
+2026-09-29 08:48:44.245 INFO: Loading checkpoint: checkpoints/mace_omol_finetuned_run-42_epoch-23.pt
+2026-09-29 08:49:08.642 INFO: Using gradient clipping with tolerance=1.000
+2026-09-29 08:49:08.643 INFO: 
+2026-09-29 08:49:08.643 INFO: ===========TRAINING===========
+2026-09-29 08:49:08.643 INFO: Started training, reporting errors on validation set
+2026-09-29 08:49:08.643 INFO: Loss metrics on validation set
+2026-09-29 08:49:33.491 INFO: Initial: head: Default, loss=0.00533041, RMSE_E_per_atom=    9.18 meV, RMSE_F=   48.96 meV / A
+2026-09-29 08:53:59.037 INFO: ===========VERIFYING SETTINGS===========
+2026-09-29 08:53:59.038 INFO: Stage Two is activated as start_stage_two was defined
+2026-09-29 08:53:59.039 INFO: MACE version: 0.3.16
+2026-09-29 08:53:59.200 INFO: CUDA version: 12.8, CUDA device: 0
+2026-09-29 08:54:00.230 INFO: Using foundation model foundation-omol.model as initial checkpoint.
+2026-09-29 08:54:00.232 INFO: ===========LOADING INPUT DATA===========
+2026-09-29 08:54:00.232 INFO: Using heads: ['Default']
+2026-09-29 08:54:00.232 INFO: Using the key specifications to parse data:
+2026-09-29 08:54:00.232 INFO: Default: KeySpecification(info_keys={'energy': 'REF_energy', 'stress': 'REF_stress', 'virials': 'REF_virials', 'dipole': 'dipole', 'head': 'head', 'elec_temp': 'elec_temp', 'total_charge': 'charge', 'polarizability': 'polarizability', 'total_spin': 'multiplicity'}, arrays_keys={'forces': 'REF_forces', 'charges': 'REF_charges'})
+2026-09-29 08:54:00.233 INFO: =============    Processing head Default     ===========
+2026-09-29 08:54:03.601 INFO: Training set 1/1 [energy: 8184, stress: 0, virials: 0, dipole components: 0, head: 8184, elec_temp: 0, total_charge: 8184, polarizability: 0, total_spin: 8184, forces: 8184, charges: 0]
+2026-09-29 08:54:03.643 INFO: Total Training set [energy: 8184, stress: 0, virials: 0, dipole components: 0, head: 8184, elec_temp: 0, total_charge: 8184, polarizability: 0, total_spin: 8184, forces: 8184, charges: 0]
+2026-09-29 08:54:04.055 INFO: Validation set 1/1 [energy: 1023, stress: 0, virials: 0, dipole components: 0, head: 1023, elec_temp: 0, total_charge: 1023, polarizability: 0, total_spin: 1023, forces: 1023, charges: 0]
+2026-09-29 08:54:04.061 INFO: Total Validation set [energy: 1023, stress: 0, virials: 0, dipole components: 0, head: 1023, elec_temp: 0, total_charge: 1023, polarizability: 0, total_spin: 1023, forces: 1023, charges: 0]
+2026-09-29 08:54:04.474 INFO: Test set 1/1 [energy: 1023, stress: 0, virials: 0, dipole components: 0, head: 1023, elec_temp: 0, total_charge: 1023, polarizability: 0, total_spin: 1023, forces: 1023, charges: 0]
+2026-09-29 08:54:04.481 INFO: Total Test set [energy: 1023, stress: 0, virials: 0, dipole components: 0, head: 1023, elec_temp: 0, total_charge: 1023, polarizability: 0, total_spin: 1023, forces: 1023, charges: 0]
+2026-09-29 08:54:04.481 INFO: Total number of configurations: train=8184, valid=1023, tests=[Default_Default: 1023],
+2026-09-29 08:54:04.533 INFO: Atomic Numbers used: [np.int64(1), np.int64(5), np.int64(6), np.int64(7), np.int64(8), np.int64(9), np.int64(15), np.int64(16), np.int64(17), np.int64(24), np.int64(25), np.int64(26), np.int64(27), np.int64(28), np.int64(29), np.int64(30), np.int64(33), np.int64(35), np.int64(53)]
+2026-09-29 08:54:04.534 INFO: Estimating E0s from foundation model predictions on training data
+2026-09-29 08:54:04.539 INFO: Estimating E0s using foundation model on 8184 configurations with 19 elements
+2026-09-29 08:58:11.602 INFO: ================================================================================
+2026-09-29 08:58:11.602 INFO: E0 ESTIMATION FROM FOUNDATION MODEL
+2026-09-29 08:58:11.602 INFO: ================================================================================
+2026-09-29 08:58:11.603 INFO: Rank of system: 19/19
+2026-09-29 08:58:11.603 INFO: Residuals: [122178.29049037]
+2026-09-29 08:58:11.603 INFO: Element 1: foundation E0 = -15.990004 eV, correction = -0.154878 eV, new E0 = -16.144882 eV
+2026-09-29 08:58:11.604 INFO: Element 5: foundation E0 = -678.593445 eV, correction = -0.384160 eV, new E0 = -678.977605 eV
+2026-09-29 08:58:11.604 INFO: Element 6: foundation E0 = -1037.167847 eV, correction = 0.188923 eV, new E0 = -1036.978924 eV
+2026-09-29 08:58:11.604 INFO: Element 7: foundation E0 = -1490.378174 eV, correction = 0.476410 eV, new E0 = -1489.901764 eV
+2026-09-29 08:58:11.604 INFO: Element 8: foundation E0 = -2047.592529 eV, correction = 0.568318 eV, new E0 = -2047.024211 eV
+2026-09-29 08:58:11.605 INFO: Element 9: foundation E0 = -2717.376465 eV, correction = 0.765286 eV, new E0 = -2716.611179 eV
+2026-09-29 08:58:11.605 INFO: Element 15: foundation E0 = -9290.515625 eV, correction = 1.410812 eV, new E0 = -9289.104813 eV
+2026-09-29 08:58:11.605 INFO: Element 16: foundation E0 = -10835.086914 eV, correction = 0.316433 eV, new E0 = -10834.770481 eV
+2026-09-29 08:58:11.605 INFO: Element 17: foundation E0 = -12522.258789 eV, correction = 0.320638 eV, new E0 = -12521.938151 eV
+2026-09-29 08:58:11.606 INFO: Element 24: foundation E0 = -28417.921875 eV, correction = -0.238959 eV, new E0 = -28418.160834 eV
+2026-09-29 08:58:11.606 INFO: Element 25: foundation E0 = -31315.437500 eV, correction = -0.114852 eV, new E0 = -31315.552352 eV
+2026-09-29 08:58:11.606 INFO: Element 26: foundation E0 = -34382.968750 eV, correction = 2.236317 eV, new E0 = -34380.732433 eV
+2026-09-29 08:58:11.606 INFO: Element 27: foundation E0 = -37622.691406 eV, correction = 1.141610 eV, new E0 = -37621.549797 eV
+2026-09-29 08:58:11.607 INFO: Element 28: foundation E0 = -41039.656250 eV, correction = 0.405631 eV, new E0 = -41039.250619 eV
+2026-09-29 08:58:11.607 INFO: Element 29: foundation E0 = -44635.363281 eV, correction = 0.480916 eV, new E0 = -44634.882365 eV
+2026-09-29 08:58:11.607 INFO: Element 30: foundation E0 = -48416.160156 eV, correction = 3.290168 eV, new E0 = -48412.869989 eV
+2026-09-29 08:58:11.607 INFO: Element 33: foundation E0 = -60840.089844 eV, correction = -3.426439 eV, new E0 = -60843.516283 eV
+2026-09-29 08:58:11.607 INFO: Element 35: foundation E0 = -70042.242188 eV, correction = -3.497021 eV, new E0 = -70045.739208 eV
+2026-09-29 08:58:11.608 INFO: Element 53: foundation E0 = -8099.596191 eV, correction = -1.620998 eV, new E0 = -8101.217189 eV
+2026-09-29 08:58:11.608 INFO: ================================================================================
+2026-09-29 08:58:11.609 INFO: FIT STATISTICS
+2026-09-29 08:58:11.609 INFO: ================================================================================
+2026-09-29 08:58:11.609 INFO: RMSE before E0 correction: 7.394341 eV
+2026-09-29 08:58:11.609 INFO: RMSE after E0 correction:  3.863796 eV
+2026-09-29 08:58:11.609 INFO: MAE before E0 correction:  5.559337 eV
+2026-09-29 08:58:11.610 INFO: MAE after E0 correction:   1.995852 eV
+2026-09-29 08:58:11.610 INFO: ================================================================================
+2026-09-29 08:58:11.611 INFO: Atomic Energies used (z: eV) for head Default: {1: -16.144881549761696, 5: -678.9776046907358, 6: -1036.978923818356, 7: -1489.9017639993142, 8: -2047.0242110841511, 9: -2716.611178900156, 15: -9289.10481312787, 16: -10834.770480577923, 17: -12521.938150669079, 24: -28418.160834167724, 25: -31315.552352135655, 26: -34380.73243258454, 27: -37621.54979658363, 28: -41039.2506193743, 29: -44634.88236546114, 30: -48412.869988611616, 33: -60843.51628313787, 35: -70045.739208363, 53: -8101.217189438262}
+2026-09-29 08:58:11.611 INFO: Processing datasets for head 'Default'
+2026-09-29 08:58:21.192 INFO: Combining 1 list datasets for head 'Default'
+2026-09-29 08:58:22.388 INFO: Combining 1 list datasets for head 'Default_valid'
+2026-09-29 08:58:22.388 INFO: Combined validation datasets for Default
+2026-09-29 08:58:22.389 INFO: Head 'Default' training dataset size: 8184
+2026-09-29 08:58:22.389 INFO: Computing average number of neighbors
+2026-09-29 08:58:26.443 INFO: Average number of neighbors: 24.968773585230778
+2026-09-29 08:58:26.444 INFO: During training the following quantities will be reported: energy, forces
+2026-09-29 08:58:26.444 INFO: ===========MODEL DETAILS===========
+2026-09-29 08:58:30.426 INFO: Loading FOUNDATION model
+2026-09-29 08:58:30.427 INFO: Using filtered elements: [np.int64(1), np.int64(5), np.int64(6), np.int64(7), np.int64(8), np.int64(9), np.int64(15), np.int64(16), np.int64(17), np.int64(24), np.int64(25), np.int64(26), np.int64(27), np.int64(28), np.int64(29), np.int64(30), np.int64(33), np.int64(35), np.int64(53)]
+2026-09-29 08:58:30.428 INFO: Model configuration extracted from foundation model
+2026-09-29 08:58:30.428 INFO: Using weighted loss function for fine-tuning
+2026-09-29 08:58:30.428 INFO: Message passing with hidden irreps 1024x0e+1024x1o+1024x2e)
+2026-09-29 08:58:30.428 INFO: 3 layers, each with correlation order: 2 (body order: 3) and spherical harmonics up to: l=3
+2026-09-29 08:58:30.428 INFO: Radial cutoff: 6.0 A (total receptive field for each atom: 18.0 A)
+2026-09-29 08:58:30.429 INFO: Distance transform for radial basis functions: None
+2026-09-29 08:58:34.134 INFO: ===========OPTIMIZER INFORMATION===========
+2026-09-29 08:58:34.134 INFO: Using ADAM as parameter optimizer
+2026-09-29 08:58:34.135 INFO: Batch size: 8
+2026-09-29 08:58:34.135 INFO: Using Exponential Moving Average with decay: 0.999
+2026-09-29 08:58:34.135 INFO: Number of gradient updates: 102300
+2026-09-29 08:58:34.135 INFO: Learning rate: 0.0001, weight decay: 0.0
+2026-09-29 08:58:34.135 INFO: WeightedEnergyForcesLoss(energy_weight=5.000, forces_weight=10.000)
+2026-09-29 08:58:34.137 INFO: === Layer's learning rates ===
+2026-09-29 08:58:34.138 INFO: Param group 0: lr = 0.0001
+2026-09-29 08:58:34.138 INFO: Param group 1: lr = 0.0001
+2026-09-29 08:58:34.138 INFO: Param group 2: lr = 0.0001
+2026-09-29 08:58:34.138 INFO: Param group 3: lr = 0.0001
+2026-09-29 08:58:34.139 INFO: Param group 4: lr = 0.0001
+2026-09-29 08:58:34.139 INFO: Param group 5: lr = 0.0001
+2026-09-29 08:58:34.139 INFO: Param group 6: lr = 0.0001
+2026-09-29 08:58:34.139 INFO: Stage Two (after 90 epochs) with loss function: WeightedEnergyForcesLoss(energy_weight=5.000, forces_weight=10.000), with energy weight : 5.0, forces weight : 10.0 and learning rate : 1e-05
+2026-09-29 08:58:34.378 WARNING: No SWA checkpoint found, while SWA is enabled. Compare the swa_start parameter and the latest checkpoint.
+2026-09-29 08:58:34.380 INFO: Loading checkpoint: checkpoints/mace_omol_finetuned_run-42_epoch-23.pt
+2026-09-29 08:58:36.091 INFO: Using gradient clipping with tolerance=1.000
+2026-09-29 08:58:36.092 INFO: 
+2026-09-29 08:58:36.092 INFO: ===========TRAINING===========
+2026-09-29 08:58:36.092 INFO: Started training, reporting errors on validation set
+2026-09-29 08:58:36.092 INFO: Loss metrics on validation set
+2026-09-29 08:58:59.565 INFO: Initial: head: Default, loss=0.00533041, RMSE_E_per_atom=    9.18 meV, RMSE_F=   48.96 meV / A
+2026-09-29 09:06:43.957 INFO: Epoch 23: head: Default, loss=0.00528412, RMSE_E_per_atom=    9.49 meV, RMSE_F=   48.84 meV / A
+2026-09-29 09:15:01.782 INFO: Epoch 24: head: Default, loss=0.00520578, RMSE_E_per_atom=    8.75 meV, RMSE_F=   48.25 meV / A
+2026-09-29 09:22:45.817 INFO: Epoch 25: head: Default, loss=0.00524558, RMSE_E_per_atom=    8.80 meV, RMSE_F=   48.40 meV / A
+2026-09-29 09:30:29.515 INFO: Epoch 26: head: Default, loss=0.00522541, RMSE_E_per_atom=    8.51 meV, RMSE_F=   48.35 meV / A
+2026-09-29 09:38:15.294 INFO: Epoch 27: head: Default, loss=0.00516996, RMSE_E_per_atom=    8.28 meV, RMSE_F=   48.06 meV / A
+2026-09-29 09:45:58.732 INFO: Epoch 28: head: Default, loss=0.00519624, RMSE_E_per_atom=    8.35 meV, RMSE_F=   48.08 meV / A
+2026-09-29 09:53:43.239 INFO: Epoch 29: head: Default, loss=0.00518738, RMSE_E_per_atom=    8.38 meV, RMSE_F=   48.05 meV / A
+2026-09-29 10:01:26.827 INFO: Epoch 30: head: Default, loss=0.00503801, RMSE_E_per_atom=    8.20 meV, RMSE_F=   47.41 meV / A
+2026-09-29 10:09:10.204 INFO: Epoch 31: head: Default, loss=0.00501584, RMSE_E_per_atom=    8.21 meV, RMSE_F=   47.21 meV / A
+2026-09-29 10:16:56.770 INFO: Epoch 32: head: Default, loss=0.00494950, RMSE_E_per_atom=    8.13 meV, RMSE_F=   46.90 meV / A
+2026-09-29 10:24:40.807 INFO: Epoch 33: head: Default, loss=0.00493444, RMSE_E_per_atom=    7.95 meV, RMSE_F=   46.75 meV / A
+2026-09-29 10:32:24.221 INFO: Epoch 34: head: Default, loss=0.00478305, RMSE_E_per_atom=    8.05 meV, RMSE_F=   46.01 meV / A
+2026-09-29 10:40:08.111 INFO: Epoch 35: head: Default, loss=0.00477137, RMSE_E_per_atom=    7.71 meV, RMSE_F=   45.93 meV / A
+2026-09-29 10:47:52.493 INFO: Epoch 36: head: Default, loss=0.00476254, RMSE_E_per_atom=    7.64 meV, RMSE_F=   45.86 meV / A
+2026-09-29 10:55:37.613 INFO: Epoch 37: head: Default, loss=0.00478471, RMSE_E_per_atom=    7.62 meV, RMSE_F=   46.04 meV / A
+2026-09-29 11:03:22.243 INFO: Epoch 38: head: Default, loss=0.00474101, RMSE_E_per_atom=    7.56 meV, RMSE_F=   45.85 meV / A
+2026-09-29 11:11:06.945 INFO: Epoch 39: head: Default, loss=0.00472950, RMSE_E_per_atom=    7.50 meV, RMSE_F=   45.71 meV / A
+2026-09-29 11:18:55.620 INFO: Epoch 40: head: Default, loss=0.00465740, RMSE_E_per_atom=    7.42 meV, RMSE_F=   45.31 meV / A
+2026-09-29 11:26:41.641 INFO: Epoch 41: head: Default, loss=0.00451597, RMSE_E_per_atom=    7.23 meV, RMSE_F=   44.69 meV / A
+2026-09-29 11:34:25.520 INFO: Epoch 42: head: Default, loss=0.00457674, RMSE_E_per_atom=    7.26 meV, RMSE_F=   45.00 meV / A
+2026-09-29 11:42:09.179 INFO: Epoch 43: head: Default, loss=0.00449493, RMSE_E_per_atom=    7.21 meV, RMSE_F=   44.55 meV / A
+2026-09-29 11:49:52.883 INFO: Epoch 44: head: Default, loss=0.00448855, RMSE_E_per_atom=    7.32 meV, RMSE_F=   44.49 meV / A
+2026-09-29 11:57:39.782 INFO: Epoch 45: head: Default, loss=0.00452567, RMSE_E_per_atom=    7.08 meV, RMSE_F=   44.62 meV / A
+2026-09-29 12:05:24.667 INFO: Epoch 46: head: Default, loss=0.00437136, RMSE_E_per_atom=    7.28 meV, RMSE_F=   43.91 meV / A
+2026-09-29 12:13:09.277 INFO: Epoch 47: head: Default, loss=0.00437958, RMSE_E_per_atom=    7.17 meV, RMSE_F=   43.94 meV / A
+2026-09-29 12:20:53.198 INFO: Epoch 48: head: Default, loss=0.00443675, RMSE_E_per_atom=    6.92 meV, RMSE_F=   44.16 meV / A
+2026-09-29 12:28:38.091 INFO: Epoch 49: head: Default, loss=0.00439079, RMSE_E_per_atom=    6.78 meV, RMSE_F=   43.93 meV / A
+2026-09-29 12:36:22.058 INFO: Epoch 50: head: Default, loss=0.00434428, RMSE_E_per_atom=    6.89 meV, RMSE_F=   43.69 meV / A
+2026-09-29 12:44:05.857 INFO: Epoch 51: head: Default, loss=0.00438608, RMSE_E_per_atom=    6.84 meV, RMSE_F=   43.92 meV / A
+2026-09-29 12:51:52.259 INFO: Epoch 52: head: Default, loss=0.00440330, RMSE_E_per_atom=    6.95 meV, RMSE_F=   43.95 meV / A
+2026-09-29 12:59:38.423 INFO: Epoch 53: head: Default, loss=0.00435959, RMSE_E_per_atom=    6.84 meV, RMSE_F=   43.72 meV / A
+2026-09-29 13:07:22.356 INFO: Epoch 54: head: Default, loss=0.00433027, RMSE_E_per_atom=    6.90 meV, RMSE_F=   43.58 meV / A
+2026-09-29 13:15:06.147 INFO: Epoch 55: head: Default, loss=0.00432237, RMSE_E_per_atom=    7.01 meV, RMSE_F=   43.54 meV / A
+2026-09-29 13:22:52.734 INFO: Epoch 56: head: Default, loss=0.00435086, RMSE_E_per_atom=    6.88 meV, RMSE_F=   43.65 meV / A
+2026-09-29 13:30:36.649 INFO: Epoch 57: head: Default, loss=0.00431629, RMSE_E_per_atom=    7.01 meV, RMSE_F=   43.44 meV / A
+2026-09-29 13:38:22.878 INFO: Epoch 58: head: Default, loss=0.00431033, RMSE_E_per_atom=    6.82 meV, RMSE_F=   43.38 meV / A
+2026-09-29 13:46:09.157 INFO: Epoch 59: head: Default, loss=0.00437570, RMSE_E_per_atom=    6.66 meV, RMSE_F=   43.65 meV / A
+2026-09-29 13:53:53.918 INFO: Epoch 60: head: Default, loss=0.00439065, RMSE_E_per_atom=    6.71 meV, RMSE_F=   43.74 meV / A
+2026-09-29 14:01:38.711 INFO: Epoch 61: head: Default, loss=0.00434945, RMSE_E_per_atom=    6.74 meV, RMSE_F=   43.58 meV / A
+2026-09-29 14:09:22.594 INFO: Epoch 62: head: Default, loss=0.00430514, RMSE_E_per_atom=    6.71 meV, RMSE_F=   43.35 meV / A
+2026-09-29 14:17:10.163 INFO: Epoch 63: head: Default, loss=0.00431837, RMSE_E_per_atom=    6.74 meV, RMSE_F=   43.34 meV / A
+2026-09-29 14:24:54.683 INFO: Epoch 64: head: Default, loss=0.00431721, RMSE_E_per_atom=    6.49 meV, RMSE_F=   43.35 meV / A
+2026-09-29 14:32:38.451 INFO: Epoch 65: head: Default, loss=0.00426542, RMSE_E_per_atom=    6.62 meV, RMSE_F=   43.12 meV / A
+2026-09-29 14:40:22.606 INFO: Epoch 66: head: Default, loss=0.00432180, RMSE_E_per_atom=    6.58 meV, RMSE_F=   43.35 meV / A
+2026-09-29 14:48:06.680 INFO: Epoch 67: head: Default, loss=0.00425903, RMSE_E_per_atom=    6.56 meV, RMSE_F=   43.02 meV / A
+2026-09-29 14:55:53.363 INFO: Epoch 68: head: Default, loss=0.00428070, RMSE_E_per_atom=    6.58 meV, RMSE_F=   43.18 meV / A
+2026-09-29 15:03:37.744 INFO: Epoch 69: head: Default, loss=0.00434872, RMSE_E_per_atom=    6.45 meV, RMSE_F=   43.48 meV / A
+2026-09-29 15:11:21.795 INFO: Epoch 70: head: Default, loss=0.00430867, RMSE_E_per_atom=    6.55 meV, RMSE_F=   43.29 meV / A
+2026-09-29 15:19:08.140 INFO: Epoch 71: head: Default, loss=0.00424295, RMSE_E_per_atom=    6.43 meV, RMSE_F=   42.92 meV / A
+2026-09-29 15:26:51.980 INFO: Epoch 72: head: Default, loss=0.00427393, RMSE_E_per_atom=    6.34 meV, RMSE_F=   43.08 meV / A
+2026-09-29 15:34:35.936 INFO: Epoch 73: head: Default, loss=0.00431638, RMSE_E_per_atom=    6.47 meV, RMSE_F=   43.25 meV / A
+2026-09-29 15:42:22.421 INFO: Epoch 74: head: Default, loss=0.00427459, RMSE_E_per_atom=    6.41 meV, RMSE_F=   43.05 meV / A
+2026-09-29 15:50:06.879 INFO: Epoch 75: head: Default, loss=0.00425751, RMSE_E_per_atom=    6.54 meV, RMSE_F=   42.96 meV / A
+2026-09-29 15:57:52.994 INFO: Epoch 76: head: Default, loss=0.00422641, RMSE_E_per_atom=    6.29 meV, RMSE_F=   42.84 meV / A
+2026-09-29 16:05:37.038 INFO: Epoch 77: head: Default, loss=0.00422683, RMSE_E_per_atom=    6.38 meV, RMSE_F=   42.80 meV / A
+2026-09-29 16:13:20.782 INFO: Epoch 78: head: Default, loss=0.00429428, RMSE_E_per_atom=    6.42 meV, RMSE_F=   43.13 meV / A
+2026-09-29 16:21:06.673 INFO: Epoch 79: head: Default, loss=0.00432133, RMSE_E_per_atom=    6.17 meV, RMSE_F=   43.27 meV / A
+2026-09-29 16:28:50.580 INFO: Epoch 80: head: Default, loss=0.00431690, RMSE_E_per_atom=    6.33 meV, RMSE_F=   43.22 meV / A
+2026-09-29 16:36:34.670 INFO: Epoch 81: head: Default, loss=0.00428805, RMSE_E_per_atom=    6.22 meV, RMSE_F=   43.11 meV / A
+2026-09-29 16:44:19.983 INFO: Epoch 82: head: Default, loss=0.00432265, RMSE_E_per_atom=    6.26 meV, RMSE_F=   43.22 meV / A
+2026-09-29 16:52:04.158 INFO: Epoch 83: head: Default, loss=0.00432194, RMSE_E_per_atom=    6.27 meV, RMSE_F=   43.21 meV / A
+2026-09-29 16:59:49.092 INFO: Epoch 84: head: Default, loss=0.00436774, RMSE_E_per_atom=    6.27 meV, RMSE_F=   43.42 meV / A
+2026-09-29 17:07:33.070 INFO: Epoch 85: head: Default, loss=0.00432831, RMSE_E_per_atom=    6.13 meV, RMSE_F=   43.30 meV / A
+2026-09-29 17:15:17.267 INFO: Epoch 86: head: Default, loss=0.00429293, RMSE_E_per_atom=    6.43 meV, RMSE_F=   43.05 meV / A
+2026-09-29 17:23:01.152 INFO: Epoch 87: head: Default, loss=0.00430778, RMSE_E_per_atom=    6.30 meV, RMSE_F=   43.13 meV / A
+2026-09-29 17:30:47.544 INFO: Epoch 88: head: Default, loss=0.00430884, RMSE_E_per_atom=    6.28 meV, RMSE_F=   43.11 meV / A
+2026-09-29 17:38:31.670 INFO: Epoch 89: head: Default, loss=0.00430270, RMSE_E_per_atom=    6.20 meV, RMSE_F=   43.09 meV / A
+2026-09-29 17:38:35.377 INFO: Changing loss based on Stage Two Weights
+2026-09-29 17:46:15.570 INFO: Epoch 90: head: Default, loss=0.00431226, RMSE_E_per_atom=    6.29 meV, RMSE_F=   43.14 meV / A
+2026-09-29 17:53:59.751 INFO: Epoch 91: head: Default, loss=0.00430698, RMSE_E_per_atom=    6.25 meV, RMSE_F=   43.11 meV / A
+2026-09-29 18:01:43.419 INFO: Epoch 92: head: Default, loss=0.00430528, RMSE_E_per_atom=    6.22 meV, RMSE_F=   43.09 meV / A
+2026-09-29 18:09:29.713 INFO: Epoch 93: head: Default, loss=0.00430771, RMSE_E_per_atom=    6.18 meV, RMSE_F=   43.10 meV / A
+2026-09-29 18:17:14.376 INFO: Epoch 94: head: Default, loss=0.00430257, RMSE_E_per_atom=    6.18 meV, RMSE_F=   43.07 meV / A
+2026-09-29 18:24:58.644 INFO: Epoch 95: head: Default, loss=0.00430106, RMSE_E_per_atom=    6.17 meV, RMSE_F=   43.06 meV / A
+2026-09-29 18:32:43.110 INFO: Epoch 96: head: Default, loss=0.00429694, RMSE_E_per_atom=    6.18 meV, RMSE_F=   43.04 meV / A
+2026-09-29 18:40:26.789 INFO: Epoch 97: head: Default, loss=0.00429512, RMSE_E_per_atom=    6.13 meV, RMSE_F=   43.03 meV / A
+2026-09-29 18:48:10.590 INFO: Epoch 98: head: Default, loss=0.00429404, RMSE_E_per_atom=    6.12 meV, RMSE_F=   43.02 meV / A
+2026-09-29 18:55:57.201 INFO: Epoch 99: head: Default, loss=0.00429244, RMSE_E_per_atom=    6.13 meV, RMSE_F=   43.01 meV / A
+2026-09-29 18:56:00.894 INFO: Training complete
+2026-09-29 18:56:00.894 INFO: 
+2026-09-29 18:56:00.895 INFO: ===========RESULTS===========
+2026-09-29 18:56:02.246 INFO: Loading checkpoint: checkpoints/mace_omol_finetuned_run-42_epoch-89.pt
+2026-09-29 18:56:04.249 INFO: Loaded Stage one model from epoch 89 for evaluation
+2026-09-29 18:56:04.250 INFO: Saving model to checkpoints/mace_omol_finetuned_run-42.model
+2026-09-29 18:56:06.628 INFO: Compiling model, saving metadata to models/mace_omol_finetuned_compiled.model
+2026-09-29 18:56:07.208 INFO: Computing metrics for training, validation, and test sets
+2026-09-29 18:56:07.210 INFO: Skipping evaluation for heads: ['pt_head']
+2026-09-29 18:56:07.210 INFO: Evaluating train_Default ...
+2026-09-29 18:58:59.713 INFO: Evaluating valid_Default ...
+2026-09-29 18:59:18.776 INFO: Error-table on TRAIN and VALID:
++---------------+---------------------+------------------+-------------------+
+|  config_type  | RMSE E / meV / atom | RMSE F / meV / A | relative F RMSE % |
++---------------+---------------------+------------------+-------------------+
+| train_Default |            6.7      |         18.8     |         11.09     |
+| valid_Default |            6.2      |         43.1     |         24.89     |
++---------------+---------------------+------------------+-------------------+
+2026-09-29 18:59:18.777 INFO: Evaluating Default_Default ...
+2026-09-29 18:59:36.347 INFO: Error-table on TEST:
++-----------------+---------------------+------------------+-------------------+
+|   config_type   | RMSE E / meV / atom | RMSE F / meV / A | relative F RMSE % |
++-----------------+---------------------+------------------+-------------------+
+| Default_Default |            7.4      |         39.0     |         21.72     |
++-----------------+---------------------+------------------+-------------------+
+2026-09-29 19:04:23.758 INFO: Loading checkpoint: checkpoints/mace_omol_finetuned_run-42_epoch-99_swa.pt
+2026-09-29 19:04:25.622 INFO: Loaded Stage two model from epoch 99 for evaluation
+2026-09-29 19:04:25.623 INFO: Saving model to checkpoints/mace_omol_finetuned_run-42_stagetwo.model
+2026-09-29 19:04:27.836 INFO: Compiling model, saving metadata models/mace_omol_finetuned_stagetwo_compiled.model
+2026-09-29 19:04:28.278 INFO: Computing metrics for training, validation, and test sets
+2026-09-29 19:04:28.282 INFO: Skipping evaluation for heads: ['pt_head']
+2026-09-29 19:04:28.283 INFO: Evaluating train_Default ...
+2026-09-29 19:07:20.518 INFO: Evaluating valid_Default ...
+2026-09-29 19:07:39.551 INFO: Error-table on TRAIN and VALID:
++---------------+---------------------+------------------+-------------------+
+|  config_type  | RMSE E / meV / atom | RMSE F / meV / A | relative F RMSE % |
++---------------+---------------------+------------------+-------------------+
+| train_Default |            6.7      |         18.5     |         10.95     |
+| valid_Default |            6.1      |         43.0     |         24.84     |
++---------------+---------------------+------------------+-------------------+
+2026-09-29 19:07:39.552 INFO: Evaluating Default_Default ...
+2026-09-29 19:07:57.115 INFO: Error-table on TEST:
++-----------------+---------------------+------------------+-------------------+
+|   config_type   | RMSE E / meV / atom | RMSE F / meV / A | relative F RMSE % |
++-----------------+---------------------+------------------+-------------------+
+| Default_Default |            7.4      |         39.1     |         21.73     |
++-----------------+---------------------+------------------+-------------------+
+2026-09-29 19:12:44.387 INFO: Done

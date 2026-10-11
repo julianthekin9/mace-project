@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mace-orca"
+dynamic = ["version"]
+description = "Fine-tuning MACE-OMOL-0 on ORCA geometry optimizations of 3d-metal complexes"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mace-torch",
+    "ase",
+    "numpy",
+]
+
+[project.optional-dependencies]
+report = ["matplotlib", "pandas"]
+dev = ["pytest"]
+
+[project.scripts]
+mace-orca-parse = "mace_orca.cli.parse_orca:main"
+mace-orca-split = "mace_orca.cli.split:main"
+mace-orca-eval = "mace_orca.cli.evaluate:main"
+mace-orca-optimize = "mace_orca.cli.optimize:main"
+
+[tool.setuptools.dynamic]
+version = { attr = "mace_orca.__version__" }
+
+[tool.setuptools.packages.find]
+include = ["mace_orca*"]

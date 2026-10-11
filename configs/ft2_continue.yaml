@@ -1,0 +1,53 @@
+# History: fine-tune 2 (30 epochs from fine-tune 1 model, epoch 89), run 2026-09-30.
+# Paths follow the old MACE folder layout on Drive; data/ was a frame-level split (leaky).
+name: mace_omol_finetuned_2
+seed: 42
+device: cuda          
+
+foundation_model: mace_omol_finetuned_run-42.model
+multiheads_finetuning: False   
+
+model: MACE
+
+train_file: data/train.xyz
+valid_file: data/valid.xyz
+test_file: data/test.xyz
+
+E0s: estimated    
+
+loss: weighted
+energy_weight: 5.0    
+forces_weight: 10.0    
+
+batch_size: 8           
+valid_batch_size: 8
+max_num_epochs: 30      
+lr: 0.00001                 
+weight_decay: 0.00001
+scaling: rms_forces_scaling
+clip_grad: 1.0
+default_dtype: float64   
+ema: True
+ema_decay: 0.999
+amsgrad: True
+scheduler: ReduceLROnPlateau
+scheduler_patience: 10
+patience: 30       
+
+swa: False
+start_swa: 90    
+swa_lr: 0.00001
+swa_energy_weight: 5.0
+swa_forces_weight: 10.0
+
+model_dir: models_2_ft
+log_dir: logs_2_ft
+checkpoints_dir: checkpoints_2_ft
+results_dir: results_2_ft
+
+energy_key: REF_energy
+forces_key: REF_forces
+total_charge_key: charge
+total_spin_key: multiplicity
+
+compute_stress: False

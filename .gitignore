@@ -1,0 +1,22 @@
+.venv/
+__pycache__/
+*.egg-info/
+.pytest_cache/
+
+# первичные данные ORCA (23 ГБ) — только локально и на Drive
+orca_data/
+
+# сплиты пересобираются: mace-orca-split (в git — dataset.extxyz и split.json)
+data/train.xyz
+data/valid.xyz
+data/test.xyz
+
+# артефакты обучения
+*.model
+*.pt
+models/
+checkpoints/
+logs/
+results/
+optimized/
+runs/
